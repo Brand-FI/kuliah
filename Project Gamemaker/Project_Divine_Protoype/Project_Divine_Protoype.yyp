@@ -39,6 +39,7 @@
     {"id":{"name":"objSound","path":"objects/objSound/objSound.yy",},},
     {"id":{"name":"forest1","path":"rooms/forest1/forest1.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"testing","path":"rooms/testing/testing.yy",},},
     {"id":{"name":"BGM_Background","path":"sounds/BGM_Background/BGM_Background.yy",},},
     {"id":{"name":"background_sprite","path":"sprites/background_sprite/background_sprite.yy",},},
     {"id":{"name":"player_idle","path":"sprites/player_idle/player_idle.yy",},},
@@ -49,6 +50,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"testing","path":"rooms/testing/testing.yy",},},
     {"roomId":{"name":"forest1","path":"rooms/forest1/forest1.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
