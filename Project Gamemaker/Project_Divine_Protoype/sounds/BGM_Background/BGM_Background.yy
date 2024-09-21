@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":3665.8154,
+  "duration":337.65878,
   "name":"BGM_Background",
   "parent":{
     "name":"Sounds",

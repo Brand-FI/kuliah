@@ -5,8 +5,14 @@
 /// @DnDArgument : "yscale" "player_scale"
 image_xscale = player_scale;image_yscale = player_scale;
 
-/// @DnDAction : YoYo Games.Instances.Sprite_Animation_Speed
+/// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 248279C8
-/// @DnDArgument : "speed" "0"
-image_speed = 0;
+/// @DnDHash : 6DB147B4
+/// @DnDInput : 3
+/// @DnDArgument : "expr_2" "layer_tilemap_get_id("Tiles_Layer")"
+/// @DnDArgument : "var" "move_x"
+/// @DnDArgument : "var_1" "move_y"
+/// @DnDArgument : "var_2" "my_tilemap"
+move_x = 0;
+move_y = 0;
+my_tilemap = layer_tilemap_get_id("Tiles_Layer");
