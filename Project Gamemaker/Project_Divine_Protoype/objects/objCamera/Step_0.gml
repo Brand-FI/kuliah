@@ -29,12 +29,23 @@ if(!(follow == noone)){	/// @DnDAction : YoYo Games.Common.Variable
 x +=  (xTo -x) / 25;
 y +=  (yTo - y) / 25;
 
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 1EB00967
+/// @DnDInput : 2
+/// @DnDArgument : "expr" "clamp(x, camWidth/2, room_width-camWidth/2);"
+/// @DnDArgument : "expr_1" "clamp(y, camHeight/2, room_height-camHeight/2);"
+/// @DnDArgument : "var" "x"
+/// @DnDArgument : "var_1" "y"
+x = clamp(x, camWidth/2, room_width-camWidth/2);;
+y = clamp(y, camHeight/2, room_height-camHeight/2);;
+
 /// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
 /// @DnDHash : 29BD63F2
 /// @DnDInput : 3
 /// @DnDArgument : "function" "camera_set_view_pos"
 /// @DnDArgument : "arg" "view_camera[0]"
-/// @DnDArgument : "arg_1" " x - (camera_get_view_width(view_camera[0]) * 0.5)"
-/// @DnDArgument : "arg_2" " y - (camera_get_view_height(view_camera[0]) * 0.5)"
-camera_set_view_pos(view_camera[0],  x - (camera_get_view_width(view_camera[0]) * 0.5),  y - (camera_get_view_height(view_camera[0]) * 0.5));
+/// @DnDArgument : "arg_1" "x-camWidth/2"
+/// @DnDArgument : "arg_2" "y-camHeight/2"
+camera_set_view_pos(view_camera[0], x-camWidth/2, y-camHeight/2);
