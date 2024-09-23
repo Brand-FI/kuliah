@@ -34,6 +34,7 @@
   },
   "name":"Project_Divine_Protoype",
   "resources":[
+    {"id":{"name":"objCamera","path":"objects/objCamera/objCamera.yy",},},
     {"id":{"name":"objMob1","path":"objects/objMob1/objMob1.yy",},},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
     {"id":{"name":"objSound","path":"objects/objSound/objSound.yy",},},
