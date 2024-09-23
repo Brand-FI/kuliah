@@ -10,7 +10,7 @@
     {"name":"inst_CBC4D6A_1","path":"rooms/testing/testing.yy",},
     {"name":"inst_3770E46B_1","path":"rooms/testing/testing.yy",},
     {"name":"inst_4A3B8E46_1","path":"rooms/testing/testing.yy",},
-    {"name":"inst_786F680","path":"rooms/testing/testing.yy",},
+    {"name":"inst_BEF4B7D","path":"rooms/testing/testing.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -22,7 +22,7 @@
         {"$GMRInstance":"v1","%Name":"inst_4A3B8E46_1","colour":4294967295,"frozen":true,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4A3B8E46_1","objectId":{"name":"objMob1","path":"objects/objMob1/objMob1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":854.0,"y":545.0,},
       ],"layers":[],"name":"mob_instance","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Camera_Layer","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_786F680","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_786F680","objectId":{"name":"objCamera","path":"objects/objCamera/objCamera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":17.0,"scaleY":15.0,"x":128.0,"y":-256.0,},
+        {"$GMRInstance":"v1","%Name":"inst_BEF4B7D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_BEF4B7D","objectId":{"name":"objCamera","path":"objects/objCamera/objCamera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":608.0,"y":384.0,},
       ],"layers":[],"name":"Camera_Layer","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_Layer","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Layer","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":68,"SerialiseWidth":360,"TileCompressedData":[
           -9598,-2147483648,-28,0,-324,-2147483648,-49,0,-311,-2147483648,-49,0,-311,-2147483648,-49,0,-323,-2147483648,
