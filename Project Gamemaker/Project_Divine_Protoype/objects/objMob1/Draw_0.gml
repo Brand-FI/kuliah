@@ -14,7 +14,7 @@ draw_self();
 /// @DnDArgument : "x2_relative" "1"
 /// @DnDArgument : "y2" "-35"
 /// @DnDArgument : "y2_relative" "1"
-/// @DnDArgument : "value" "health"
+/// @DnDArgument : "value" "hp"
 /// @DnDArgument : "mincol" "$FF0000FF"
 /// @DnDArgument : "maxcol" "$FF3BFF00"
-draw_healthbar(x + -50, y + -46, x + 50, y + -35, health, $FFFFFFFF & $FFFFFF, $FF0000FF & $FFFFFF, $FF3BFF00 & $FFFFFF, 0, (($FFFFFFFF>>24) != 0), (($FFFFFFFF>>24) != 0));
+draw_healthbar(x + -50, y + -46, x + 50, y + -35, hp, $FFFFFFFF & $FFFFFF, $FF0000FF & $FFFFFF, $FF3BFF00 & $FFFFFF, 0, (($FFFFFFFF>>24) != 0), (($FFFFFFFF>>24) != 0));
