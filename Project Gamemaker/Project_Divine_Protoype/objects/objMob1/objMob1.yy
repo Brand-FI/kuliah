@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"Slime1_Sprite",
-    "path":"sprites/Slime1_Sprite/Slime1_Sprite.yy",
+    "name":"spr_slime1",
+    "path":"sprites/spr_slime1/spr_slime1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

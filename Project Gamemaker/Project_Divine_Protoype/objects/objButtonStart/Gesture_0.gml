@@ -3,7 +3,7 @@
 /// @DnDHash : 7766993D
 /// @DnDArgument : "function" "room_goto"
 /// @DnDArgument : "arg" "Chapter1"
-room_goto(Chapter1);
+room_goto(room_chapter1);
 
 /// @DnDAction : YoYo Games.Audio.Stop_All_Audio
 /// @DnDVersion : 1

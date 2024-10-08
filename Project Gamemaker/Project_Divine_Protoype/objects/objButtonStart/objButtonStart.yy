@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprite_start",
-    "path":"sprites/sprite_start/sprite_start.yy",
+    "name":"sprite_button_start",
+    "path":"sprites/sprite_button_start/sprite_button_start.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,22 +1,22 @@
 {
   "$GMRoom":"v1",
-  "%Name":"Chapter1",
+  "%Name":"room_chapter1",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_ACE76C4_1","path":"rooms/Chapter1/Chapter1.yy",},
-    {"name":"inst_CBC4D6A_1","path":"rooms/Chapter1/Chapter1.yy",},
-    {"name":"inst_3770E46B_1","path":"rooms/Chapter1/Chapter1.yy",},
-    {"name":"inst_4A3B8E46_1","path":"rooms/Chapter1/Chapter1.yy",},
-    {"name":"inst_BEF4B7D","path":"rooms/Chapter1/Chapter1.yy",},
-    {"name":"inst_77FF28B7","path":"rooms/Chapter1/Chapter1.yy",},
+    {"name":"inst_ACE76C4_1","path":"rooms/room_chapter1/room_chapter1.yy",},
+    {"name":"inst_CBC4D6A_1","path":"rooms/room_chapter1/room_chapter1.yy",},
+    {"name":"inst_3770E46B_1","path":"rooms/room_chapter1/room_chapter1.yy",},
+    {"name":"inst_4A3B8E46_1","path":"rooms/room_chapter1/room_chapter1.yy",},
+    {"name":"inst_BEF4B7D","path":"rooms/room_chapter1/room_chapter1.yy",},
+    {"name":"inst_77FF28B7","path":"rooms/room_chapter1/room_chapter1.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_ACE76C4_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_ACE76C4_1","objectId":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":490.0,"y":274.0,},
+        {"$GMRInstance":"v1","%Name":"inst_ACE76C4_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_ACE76C4_1","objectId":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":479.0,"y":559.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"mob_instance","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_3770E46B_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3770E46B_1","objectId":{"name":"objMob1","path":"objects/objMob1/objMob1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1579.0,"y":801.0,},
@@ -486,7 +486,7 @@
       ],"layers":[],"name":"sound_instance","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"background_sprite","path":"sprites/background_sprite/background_sprite.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
   ],
-  "name":"Chapter1",
+  "name":"room_chapter1",
   "parent":{
     "name":"Rooms",
     "path":"folders/Rooms.yy",
