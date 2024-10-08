@@ -2,8 +2,8 @@
 /// @DnDVersion : 1
 /// @DnDHash : 4DEF4A9B
 /// @DnDInput : 5
-/// @DnDArgument : "expr" "1366"
-/// @DnDArgument : "expr_1" "768"
+/// @DnDArgument : "expr" "1920"
+/// @DnDArgument : "expr_1" "1080"
 /// @DnDArgument : "expr_2" "objPlayer"
 /// @DnDArgument : "expr_3" "x"
 /// @DnDArgument : "expr_4" "y"
@@ -12,8 +12,8 @@
 /// @DnDArgument : "var_2" "follow"
 /// @DnDArgument : "var_3" "xTo"
 /// @DnDArgument : "var_4" "yTo"
-camWidth = 1366;
-camHeight  = 768;
+camWidth = 1920;
+camHeight  = 1080;
 follow = objPlayer;
 xTo = x;
 yTo = y;
