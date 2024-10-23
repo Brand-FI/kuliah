@@ -54,6 +54,7 @@
     {"id":{"name":"spr_main_idle","path":"sprites/spr_main_idle/spr_main_idle.yy",},},
     {"id":{"name":"spr_slime1","path":"sprites/spr_slime1/spr_slime1.yy",},},
     {"id":{"name":"sprite_button_start","path":"sprites/sprite_button_start/sprite_button_start.yy",},},
+    {"id":{"name":"Sprite12","path":"sprites/Sprite12/Sprite12.yy",},},
     {"id":{"name":"SpriteTree1","path":"sprites/SpriteTree1/SpriteTree1.yy",},},
     {"id":{"name":"tPath","path":"sprites/tPath/tPath.yy",},},
     {"id":{"name":"tForest","path":"tilesets/tForest/tForest.yy",},},
