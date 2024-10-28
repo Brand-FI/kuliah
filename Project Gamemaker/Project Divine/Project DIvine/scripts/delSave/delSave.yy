@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"delSave",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"delSave",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
