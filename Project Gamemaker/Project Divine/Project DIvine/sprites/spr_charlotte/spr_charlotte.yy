@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_charlotte",
   "bboxMode":0,
-  "bbox_bottom":249,
+  "bbox_bottom":190,
   "bbox_left":2,
-  "bbox_right":245,
+  "bbox_right":212,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":250,
+  "height":191,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"1359f5c2-ff57-4e9e-abe7-9cad023c0bd6","blendMode":0,"displayName":"default","isLocked":false,"name":"1359f5c2-ff57-4e9e-abe7-9cad023c0bd6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":250,
+  "width":216,
 }

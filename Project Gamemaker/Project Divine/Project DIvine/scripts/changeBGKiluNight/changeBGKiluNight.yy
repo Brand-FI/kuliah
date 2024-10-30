@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"changeBGKiluNight",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"changeBGKiluNight",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

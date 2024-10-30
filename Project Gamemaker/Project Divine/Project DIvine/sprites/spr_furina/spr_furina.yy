@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_furina",
   "bboxMode":0,
-  "bbox_bottom":255,
-  "bbox_left":27,
-  "bbox_right":245,
+  "bbox_bottom":190,
+  "bbox_left":23,
+  "bbox_right":207,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":256,
+  "height":191,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"d4ab8a1e-e878-49ec-a3f0-5af5e51ab7bd","blendMode":0,"displayName":"default","isLocked":false,"name":"d4ab8a1e-e878-49ec-a3f0-5af5e51ab7bd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":256,
+  "width":216,
 }

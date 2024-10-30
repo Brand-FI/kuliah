@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_kazuha",
   "bboxMode":0,
-  "bbox_bottom":255,
-  "bbox_left":13,
-  "bbox_right":255,
+  "bbox_bottom":190,
+  "bbox_left":11,
+  "bbox_right":215,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":256,
+  "height":191,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"8626a0c2-2117-406e-828e-d9e3cc225cc1","blendMode":0,"displayName":"default","isLocked":false,"name":"8626a0c2-2117-406e-828e-d9e3cc225cc1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":256,
+  "width":216,
 }

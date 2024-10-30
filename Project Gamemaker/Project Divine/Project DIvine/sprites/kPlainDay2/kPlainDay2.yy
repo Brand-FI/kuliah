@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Killua Plain Sprites",
-    "path":"folders/Sprites/Killua Plain Sprites.yy",
+    "name":"KiluPlain Sprites",
+    "path":"folders/Sprites/KiluPlain Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
