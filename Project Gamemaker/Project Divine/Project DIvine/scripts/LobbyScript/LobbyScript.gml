@@ -1,5 +1,6 @@
 //Script jalan saat di LOBBY
-
+globalvar combatState;
+combatState = false;
 
 window_set_fullscreen(true);
 

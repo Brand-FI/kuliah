@@ -1,2 +1,3 @@
-instance_destroy(objPlayer)
+instance_destroy(objController)
 room_goto(Lobby)
+combatState = false;
