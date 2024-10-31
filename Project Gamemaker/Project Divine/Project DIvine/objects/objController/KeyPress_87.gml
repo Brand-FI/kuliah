@@ -1,13 +1,17 @@
 if (combatState != true) 
 {
-	if(countStep % 10 >= 0 && countStep % 10 < 5)
+
+    if ( wKeyCooldown <= 0) 
 	{
-		changeBGKiluDay()
-	}
-	else
-	{
-		changeBGKiluNight()	
-	}
-	countStep++
-   // randomSpawnMob1();
+        wKeyCooldown = wKeyCooldownTime; 
+        
+        if (countStep % 10 >= 0 && countStep % 10 < 5) {
+            changeBGKiluDay();
+        } else {
+            changeBGKiluNight();
+        }
+        countStep++;
+    }
+
+
 }
