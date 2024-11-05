@@ -5,7 +5,10 @@ function randomSpawnMob() {
 	var spawnChance = 20; 
   
     if (rdm <= spawnChance) {
+	  combatState = true; 
       spawnEnemy()
-      combatState = true; 
+      
     }
+	
+	
 }

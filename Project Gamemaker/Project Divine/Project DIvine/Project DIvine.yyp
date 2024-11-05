@@ -44,6 +44,7 @@
     {"id":{"name":"objButtonPlay","path":"objects/objButtonPlay/objButtonPlay.yy",},},
     {"id":{"name":"objCharlotte","path":"objects/objCharlotte/objCharlotte.yy",},},
     {"id":{"name":"objController","path":"objects/objController/objController.yy",},},
+    {"id":{"name":"objectBattleManager","path":"objects/objectBattleManager/objectBattleManager.yy",},},
     {"id":{"name":"objEnemy","path":"objects/objEnemy/objEnemy.yy",},},
     {"id":{"name":"objExitButton","path":"objects/objExitButton/objExitButton.yy",},},
     {"id":{"name":"objFurina","path":"objects/objFurina/objFurina.yy",},},
