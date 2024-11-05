@@ -1,4 +1,9 @@
 //Script jalan saat di LOBBY
+
+globalvar saveFile;
+saveFile = "divine.dat";
+
+randomize()
 globalvar combatState;
 combatState = false;
 
