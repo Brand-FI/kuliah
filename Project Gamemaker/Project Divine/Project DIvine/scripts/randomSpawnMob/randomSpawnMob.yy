@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"randomSpawnMob",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"randomSpawnMob",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

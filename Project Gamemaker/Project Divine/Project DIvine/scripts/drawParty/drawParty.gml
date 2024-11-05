@@ -1,6 +1,6 @@
 function drawParty() {
-    var spacing = 60;
-    var start_x = (room_width - (180 * array_length(global.party) + spacing * (array_length(global.party) - 1))) / 2;
+    var spacing = 90;
+    var start_x = (room_width - (155 * array_length(global.party) + spacing * (array_length(global.party) - 1))) / 2;
     var start_y = room_height - 270;
 
     // Check if global.party is defined and is an array
@@ -10,19 +10,18 @@ function drawParty() {
 
             // Check if the character is a valid instance
             if (instance_exists(character)) {
+			
                 // Draw character's assigned sprite directly
-                draw_sprite(character.sprite_index, 0, start_x + (180 + spacing) * i, start_y);
-
-                // Draw frame behind character (optional frame sprite)
+                draw_sprite(character.sprite_index, 0, start_x + (180 + spacing) * i, (start_y + 30));
+                // Draw frame behind character 
                 draw_sprite(spr_player_frame, 0, start_x + (180 + spacing) * i, start_y + 180);
 
                 // Draw character name
                 draw_set_font(FontSilverLarge);
                 draw_set_color(c_white); // Set color for text
                 draw_text((start_x - 50) + (180 + spacing) * i, start_y + 120, character.name);
-
                 // Health bar
-                var hp_percentage = (character.hp / character.max_health) * 100;
+				var hp_percentage = (character.hp / character.max_health) * 100;
                 draw_healthbar(
                     (start_x - 97) + (180 + spacing) * i, 
                     start_y + 163, 

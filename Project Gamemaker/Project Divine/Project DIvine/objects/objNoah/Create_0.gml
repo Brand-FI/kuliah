@@ -1,5 +1,5 @@
 name = "Itto";
-health = 1000;
+hp = 1000;
 max_health = 1000;
 mana = 50;
 max_mana = 50;

@@ -1,4 +1,3 @@
-
 name = "Ayaka";
 hp = 1000;
 max_health = 1000;

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"randomSpawnMob1",
+  "%Name":"createParty",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"randomSpawnMob1",
+  "name":"createParty",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

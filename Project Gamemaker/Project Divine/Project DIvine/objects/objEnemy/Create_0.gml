@@ -1,4 +1,4 @@
-name = "Wolf";
+name = "";
 hp  = 1000;
 max_health = 1000;
 spdEnemy = 100
