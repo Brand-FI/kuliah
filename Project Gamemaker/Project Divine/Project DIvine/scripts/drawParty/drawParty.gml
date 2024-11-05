@@ -12,6 +12,7 @@ function drawParty() {
             if (instance_exists(character)) {
 			
                 // Draw character's assigned sprite directly
+				
                 draw_sprite(character.sprite_index, 0, start_x + (180 + spacing) * i, (start_y + 30));
                 // Draw frame behind character 
                 draw_sprite(spr_player_frame, 0, start_x + (180 + spacing) * i, start_y + 180);

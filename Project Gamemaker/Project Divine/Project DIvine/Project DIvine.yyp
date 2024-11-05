@@ -58,6 +58,7 @@
     {"id":{"name":"Lobby","path":"rooms/Lobby/Lobby.yy",},},
     {"id":{"name":"changeBGKiluDay","path":"scripts/changeBGKiluDay/changeBGKiluDay.yy",},},
     {"id":{"name":"changeBGKiluNight","path":"scripts/changeBGKiluNight/changeBGKiluNight.yy",},},
+    {"id":{"name":"createEnemy","path":"scripts/createEnemy/createEnemy.yy",},},
     {"id":{"name":"createParty","path":"scripts/createParty/createParty.yy",},},
     {"id":{"name":"delSave","path":"scripts/delSave/delSave.yy",},},
     {"id":{"name":"drawParty","path":"scripts/drawParty/drawParty.yy",},},
