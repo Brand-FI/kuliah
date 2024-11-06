@@ -1,4 +1,5 @@
 //Script jalan saat di LOBBY
+globalvar currentEnemy [];
 
 globalvar saveFile;
 saveFile = "divine.dat";

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"changeBGKiluDay",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Project DIvine",
+    "path":"Project DIvine.yyp",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

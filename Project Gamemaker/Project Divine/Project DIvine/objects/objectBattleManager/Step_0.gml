@@ -7,37 +7,30 @@ if (combatState) {
     for (var i = 0; i < array_length(global.party); i++) {
         participants[array_length(participants)] = global.party[i];
     }
+	
+	participants[array_length(participants)] = currentEnemy[1];
 
-    // Add all enemy instances (enemy_instances) to participants
-    var enemy_instance = instance_find(enemy_instances, 0); // Get the first instance of enemy_instances
-
-    // Loop through all instances of enemy_instances
-    while (enemy_instance != noone) {
-        if (enemy_instance.health > 0) { // Check if the enemy is alive
-            participants[array_length(participants)] = enemy_instance; // Add to participants
-        }
-        enemy_instance = instance_find(enemy_instances, array_length(participants)); // Move to the next instance
-    }
-
+	var action_value = 0;
+	var action_values_initialized = 0;
     // Initialize action values if not done already
     if (!action_values_initialized) {
         for (var i = 0; i < array_length(participants); i++) {
-            participants[i].action_value = 10000 / participants[i].spdChar;
+            participants[i].action_value = 10000 / participants[i].spd;
         }
         action_values_initialized = true;
     }
 
     // Remove defeated participants
     participants = array_filter(participants, function(member) {
-        return member.health > 0;
+        return member.hp > 0;
     });
-
+	var parent = object_get_parent(participants);
     // Check if battle should end
     var players_alive = array_filter(participants, function(member) {
-        return member.team == "player";
+        return member.parent  == "objPartyMember";
     });
     var enemies_alive = array_filter(participants, function(member) {
-        return member.team == "enemy";
+        return member.parent == "objEnemy";
     });
 
     if (array_length(players_alive) == 0 || array_length(enemies_alive) == 0) {
@@ -57,7 +50,7 @@ if (combatState) {
         current_actor.take_action();
 
         // Update action value for the next turn
-        current_actor.action_value += 10000 / current_actor.spdChar;
+        current_actor.action_value += 10000 / current_actor.spd;
 
         // Re-sort participants to update turn order
         array_sort(participants, function(a, b) {

@@ -3,7 +3,7 @@
 function createParty()
 {
 
-global.party = [];
+global.party = []
 
 //Sprite Objek sengaja disembunyiin karena akan didraw di drawParty
 global.party[0] = instance_create_layer(-200,0, "Instances", objAyaka);
