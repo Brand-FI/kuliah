@@ -24,6 +24,8 @@ if (combatState) {
     participants = array_filter(participants, function(member) {
         return member.hp > 0;
     });
+	
+	
 	var parent = object_get_parent(participants);
     // Check if battle should end
     var players_alive = array_filter(participants, function(member) {
