@@ -1,83 +1,57 @@
 function drawParty() {
-    var spacing = 60; // Jarak antar karakter
-    var start_x = (room_width - (180 * array_length(global.party) + spacing * (array_length(global.party) - 1))) / 2; // Posisi awal X agar karakter terpusat
-    var start_y = room_height - 270; // Posisi Y hampir di bawah layar
+    var spacing = 90;
+    var start_x = (room_width - (155 * array_length(global.party) + spacing * (array_length(global.party) - 1))) / 2;
+    var start_y = room_height - 270;
 
-    for (var i = 0; i < array_length(global.party); i++) {
-        var character = global.party[i];
-        draw_sprite(spr_player_frame, 0, start_x + (216 + spacing) * i, start_y + 180); // Lokasi Player Frame
-        
-        // Draw character sprite based on name
-        switch (character.name) {
-            case "Ayaka":
-                draw_sprite(spr_ayaka, 0, start_x + (216 + spacing) * i, start_y);
-                break;
-            case "Charlotte":
-                draw_sprite(spr_charlotte, 0, start_x + (216 + spacing) * i, start_y);
-                break;
-            case "Furina":
-                draw_sprite(spr_furina, 0, start_x + (216 + spacing) * i, start_y);
-                break;
-            case "Raiden":
-                draw_sprite(spr_raiden, 0, start_x + (216 + spacing) * i, start_y);
-                break;
-            case "Kazuha":
-                draw_sprite(spr_kazuha, 0, start_x + (216 + spacing) * i, start_y);
-                break;
-            case "Itto":
-                draw_sprite(spr_itto, 0, start_x + (216 + spacing) * i, start_y);
-                break;
+    // Check if global.party is defined and is an array
+    if (global.party != undefined && array_length(global.party) > 0) {
+        for (var i = 0; i < array_length(global.party); i++) {
+            var character = global.party[i];
+
+            // Check if the character is a valid instance
+            if (instance_exists(character)) {
+			
+                // Draw character's assigned sprite directly
+				
+                draw_sprite(character.sprite_index, 0, start_x + (180 + spacing) * i, (start_y + 30));
+                // Draw frame behind character 
+                draw_sprite(spr_player_frame, 0, start_x + (180 + spacing) * i, start_y + 180);
+
+                // Draw character name
+                draw_set_font(FontSilverLarge);
+                draw_set_color(c_white); // Set color for text
+                draw_text((start_x - 50) + (180 + spacing) * i, start_y + 120, character.name);
+                // Health bar
+				var hp_percentage = (character.hp / character.max_health) * 100;
+                draw_healthbar(
+                    (start_x - 97) + (180 + spacing) * i, 
+                    start_y + 163, 
+                    (start_x - 100) + (180 + spacing) * i + 195, 
+                    start_y + 193, 
+                    hp_percentage,
+                    c_black, c_red, c_lime, 0, true, true
+                );
+
+                // HP text
+                draw_set_font(FontSilver);
+                draw_set_color(c_white); // Set color for text
+                draw_text((start_x - 50) + (180 + spacing) * i, start_y + 168, "HP: " + string(character.hp) + "/" + string(character.max_health));
+
+                // Mana bar
+                var mana_percentage = (character.mana / character.max_mana) * 100;
+                draw_healthbar(
+                    (start_x - 97) + (180 + spacing) * i,
+                    start_y + 203,
+                    (start_x - 100) + (180 + spacing) * i + 195,
+                    start_y + 233,
+                    mana_percentage,
+                    c_black, c_blue, c_blue, 0, true, true
+                );
+
+                // MP text
+                draw_set_color(c_white); // Set color for text
+                draw_text((start_x - 50) + (180 + spacing) * i, start_y + 208, "MP: " + string(character.mana) + "/" + string(character.max_mana));
+            }
         }
-
-        // Draw character name with a larger font
-        draw_set_font(FontSilverLarge); // Set to the larger font for names
-        draw_text((start_x - 50) + (216 + spacing) * i, start_y + 140, character.name); 
-
-        // Draw health bar instead of health text
-        var hp = character.health; // Current health
-        var max_hp = character.max_health; // Maximum health
-        var pc = (hp / max_hp) * 100; // Percentage of health
-
-        // Drawing the health bar
-        draw_healthbar(
-            (start_x - 100) + (216 + spacing) * i, // x1
-            start_y + 190, // y1
-            (start_x - 100) + (216 + spacing) * i + 180, // x2 (width of the health bar)
-            start_y + 210, // y2
-            pc, // amount (percentage of health)
-            c_black, // backcol
-            c_red, // mincol
-            c_lime, // maxcol
-            0, // direction
-            true, // showback
-            true  // showborder
-        );
-
-        // Draw HP text using the smaller font
-        draw_set_font(FontSilver); // Set to the smaller font for HP
-        draw_text((start_x - 100) + (216 + spacing) * i, start_y + 190, "HP: " + string(character.health) + "/" + string(character.max_health));
-
-        // MP
-        // Draw mana bar
-        var mana = character.mana; // Current mana
-        var max_mana = character.max_mana; // Maximum mana
-        var pc_mana = (mana / max_mana) * 100; // Percentage of mana
-
-        draw_healthbar(
-            (start_x - 100) + (216 + spacing) * i, // x1
-            start_y + 215, // y1 (below health bar)
-            (start_x - 100) + (216 + spacing) * i + 180, // x2 (width of the mana bar)
-            start_y + 235, // y2
-            pc_mana, // amount (percentage of mana)
-            c_black, // backcol
-            c_blue, // mincol (color when no mana)
-            c_blue, // maxcol (color when full mana)
-            0, // direction
-            true, // showback
-            true  // showborder
-        );
-
-        // Draw mana (MP) text using the smaller font
-        draw_text((start_x - 100) + (216 + spacing) * i, start_y + 215, "MP: " + string(character.mana) + "/" + string(character.max_mana));
     }
 }

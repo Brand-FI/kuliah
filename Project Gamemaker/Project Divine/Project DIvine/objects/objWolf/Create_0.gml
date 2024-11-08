@@ -1,4 +1,8 @@
-x = 960
-y = 360
-hpWolf = 2000;
-max_hpWolf = 2000   
+name = "Wolf";
+hp  = 1000;
+max_health = 1000;
+spd = 100
+attack = 200;
+skills = [];
+level = 1;
+team = "enemy";

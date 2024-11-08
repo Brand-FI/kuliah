@@ -1,7 +1,8 @@
-drawParty();
 
 // Step 2: Draw the room's normal content first
 draw_self();
+
+drawParty()
 
 // Step 3: Draw the fade overlay at 1920 x 1080 above everything else
 // Draw the fade overlay at 1920 x 1080 above everything else
@@ -14,3 +15,5 @@ if (fade_alpha > 0) {
     draw_set_alpha(1);
     draw_set_color(c_white); // Or whatever default color you need for other elements
 }
+
+
