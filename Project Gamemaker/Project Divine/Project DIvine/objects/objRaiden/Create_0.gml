@@ -7,4 +7,4 @@ spd = 100
 attack = 10;
 skills = [];
 level = 1;
-
+team = "character";

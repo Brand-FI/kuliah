@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"randomSpawnMob1",
+  "%Name":"combatSystem",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"randomSpawnMob1",
+  "name":"combatSystem",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

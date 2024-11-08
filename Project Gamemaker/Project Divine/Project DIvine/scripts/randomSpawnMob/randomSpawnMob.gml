@@ -6,6 +6,8 @@ function randomSpawnMob() {
   
     if (rdm <= spawnChance) {
 	  combatState = true; 
-      spawnEnemy() 
+	  spawnEnemy();
+	  combatSystem();
+
     }
 }

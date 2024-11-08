@@ -17,6 +17,5 @@ function spawnEnemy()
 			//PLACEHOLDER
 			currentEnemy[1] = instance_create_layer(960,360, "enemy_instances", objGhoul);	
 		}
-		instance_create_layer(-200,0,"Instances", objectBattleManager);
 	}
 }

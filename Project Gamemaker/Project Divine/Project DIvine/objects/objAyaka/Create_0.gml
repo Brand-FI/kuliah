@@ -7,4 +7,4 @@ spd = 100
 attack = 12;
 skills = ["Skill", "Ultimate"];
 level = 1;
-
+team = "character";
