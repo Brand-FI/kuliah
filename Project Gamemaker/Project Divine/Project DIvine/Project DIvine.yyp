@@ -40,6 +40,7 @@
     {"id":{"name":"FontSilver","path":"fonts/FontSilver/FontSilver.yy",},},
     {"id":{"name":"FontSilverLarge","path":"fonts/FontSilverLarge/FontSilverLarge.yy",},},
     {"id":{"name":"objAyaka","path":"objects/objAyaka/objAyaka.yy",},},
+    {"id":{"name":"objBattleManager","path":"objects/objBattleManager/objBattleManager.yy",},},
     {"id":{"name":"objButtonOption","path":"objects/objButtonOption/objButtonOption.yy",},},
     {"id":{"name":"objButtonPlay","path":"objects/objButtonPlay/objButtonPlay.yy",},},
     {"id":{"name":"objCharlotte","path":"objects/objCharlotte/objCharlotte.yy",},},

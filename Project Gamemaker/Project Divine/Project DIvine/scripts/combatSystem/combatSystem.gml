@@ -64,5 +64,7 @@ function combatSystem(){
         array_sort(participants, function(a, b) {
             return a.action_value - b.action_value;
         });
+		
+	
 	}
 }
