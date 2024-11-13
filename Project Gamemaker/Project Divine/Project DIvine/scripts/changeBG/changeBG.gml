@@ -7,7 +7,6 @@ function changeBG(roomName, countStep)
 		    fade_out = true; 
 		    fade_alpha = 0; 
 		    var rdm = irandom(6);
-		
 		    if (rdm == 0) new_bg_sprite = kPlainDay1;
 		    else if (rdm == 1) 
 			new_bg_sprite = kPlainDay2;
@@ -24,11 +23,7 @@ function changeBG(roomName, countStep)
 		{
 			fade_out = true;
 		    fade_alpha = 0; 
-
-
 		    var rdm = irandom(6);
-
-
 		    if (rdm == 0) new_bg_sprite = kPlainNight1;
 		    else if (rdm == 1) new_bg_sprite = kPlainNight2;
 		    else if (rdm == 2) new_bg_sprite = kPlainNight3;
