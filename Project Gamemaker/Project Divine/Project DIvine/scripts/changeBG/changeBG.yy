@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"changeBGKiluDay",
+  "%Name":"changeBG",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"changeBGKiluDay",
+  "name":"changeBG",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
