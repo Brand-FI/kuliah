@@ -17,7 +17,7 @@ function drawParty() {
                 // draw nama character
                 draw_set_font(FontSilverLarge);
                 draw_set_color(c_white); // Set color for text
-                draw_text((start_x - 50) + (180 + spacing) * i, start_y + 120, character.name);
+                draw_text((start_x - 30) + (180 + spacing) * i, start_y + 120, character.name);
                 // draw Health bar
 				var hp_percentage = (character.hp / character.max_health) * 100;
                 draw_healthbar(
