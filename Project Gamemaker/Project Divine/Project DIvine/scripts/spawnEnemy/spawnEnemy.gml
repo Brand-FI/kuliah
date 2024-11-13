@@ -4,12 +4,12 @@ function spawnEnemy()
 {
 	
 	var roomName = room_get_name(room);
-	if(roomName = "Game")
+	if(roomName = "kilusplain")
 	{
 		var number = irandom(2)
 		if(number == 0)
 		{
-			
+			//PLACEHOLDER
 			currentEnemy[1] = instance_create_layer(960,360, "enemy_instances", objWolf);	
 		}
 		else

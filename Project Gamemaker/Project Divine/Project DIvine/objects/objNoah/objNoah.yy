@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_itto",
-    "path":"sprites/spr_itto/spr_itto.yy",
+    "name":"spr_noah",
+    "path":"sprites/spr_noah/spr_noah.yy",
   },
   "spriteMaskId":null,
   "visible":true,

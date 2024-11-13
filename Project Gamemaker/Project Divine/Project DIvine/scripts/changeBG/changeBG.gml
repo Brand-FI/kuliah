@@ -1,6 +1,6 @@
 function changeBG(roomName, countStep) 
 {
-	if (roomName == "Game") 
+	if (roomName == "kilusplain") 
 	{
 		if(countStep % 10 >= 0 && countStep % 10 < 5)
 		{

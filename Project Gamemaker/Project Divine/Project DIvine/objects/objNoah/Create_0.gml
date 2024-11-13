@@ -1,4 +1,4 @@
-name = "Itto";
+name = "Noah";
 hp = 1000;
 max_health = 1000;
 mana = 50;

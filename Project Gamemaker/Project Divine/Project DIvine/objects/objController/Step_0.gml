@@ -21,6 +21,7 @@ if (fade_in) {
     }
 }
 
+// Cooldown pencet W
 if (wKeyCooldown > 0) {
         wKeyCooldown--;
 }

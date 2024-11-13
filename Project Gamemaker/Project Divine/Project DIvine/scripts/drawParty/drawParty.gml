@@ -3,25 +3,22 @@ function drawParty() {
     var start_x = (room_width - (155 * array_length(global.party) + spacing * (array_length(global.party) - 1))) / 2;
     var start_y = room_height - 270;
 
-    // Check if global.party is defined and is an array
     if (global.party != undefined && array_length(global.party) > 0) {
         for (var i = 0; i < array_length(global.party); i++) {
             var character = global.party[i];
 
-            // Check if the character is a valid instance
             if (instance_exists(character)) {
 			
-                // Draw character's assigned sprite directly
 				
-                draw_sprite(character.sprite_index, 0, start_x + (180 + spacing) * i, (start_y + 30));
-                // Draw frame behind character 
+                draw_sprite(character.sprite_index, 0, start_x + (180 + spacing) * i, (start_y + 10));
+                // draw frame
                 draw_sprite(spr_player_frame, 0, start_x + (180 + spacing) * i, start_y + 180);
 
-                // Draw character name
+                // draw nama character
                 draw_set_font(FontSilverLarge);
                 draw_set_color(c_white); // Set color for text
                 draw_text((start_x - 50) + (180 + spacing) * i, start_y + 120, character.name);
-                // Health bar
+                // draw Health bar
 				var hp_percentage = (character.hp / character.max_health) * 100;
                 draw_healthbar(
                     (start_x - 97) + (180 + spacing) * i, 
@@ -34,7 +31,7 @@ function drawParty() {
 
                 // HP text
                 draw_set_font(FontSilver);
-                draw_set_color(c_white); // Set color for text
+                draw_set_color(c_white); // ganti warna text
                 draw_text((start_x - 50) + (180 + spacing) * i, start_y + 168, "HP: " + string(character.hp) + "/" + string(character.max_health));
 
                 // Mana bar
