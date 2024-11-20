@@ -1,7 +1,7 @@
 if (combatState) {
     var display_limit = 6;      // Jumlah karakter
-    var start_x = 75;          // Posisi awal di X
-    var start_y = 80;          // Posisi awal di Y
+    var start_x = 55;          // Posisi awal di X
+    var start_y = 40;          // Posisi awal di Y
     var box_width = 120;         // Lebar kotak
     var box_height = 90;        // Tinggi kotak
     var spacing = 20;           // Jarak

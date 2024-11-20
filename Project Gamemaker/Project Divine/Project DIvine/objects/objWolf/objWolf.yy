@@ -9,8 +9,8 @@
   "name":"objWolf",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Object Enemy",
+    "path":"folders/Objects/Object Enemy.yy",
   },
   "parentObjectId":{
     "name":"objEnemy",

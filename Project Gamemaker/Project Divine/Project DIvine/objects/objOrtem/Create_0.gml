@@ -8,3 +8,5 @@ attack = 10;
 skills = [];
 level = 1;
 team = "character";
+
+banner_sprite = spr_banner_ortem;

@@ -8,8 +8,8 @@
   "name":"objOrtem",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Object Character",
+    "path":"folders/Objects/Object Character.yy",
   },
   "parentObjectId":{
     "name":"objPartyMember",

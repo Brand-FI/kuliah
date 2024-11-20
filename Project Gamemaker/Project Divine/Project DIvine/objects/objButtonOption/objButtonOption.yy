@@ -9,8 +9,8 @@
   "name":"objButtonOption",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Object Button",
+    "path":"folders/Objects/Object Button.yy",
   },
   "parentObjectId":null,
   "persistent":false,

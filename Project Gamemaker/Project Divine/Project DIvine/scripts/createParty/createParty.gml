@@ -1,17 +1,23 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function createParty()
-{
+function createParty() {
+    global.party = [];
 
-global.party = []
-
-//Sprite Objek sengaja disembunyiin karena akan didraw di drawParty
-global.party[0] = instance_create_layer(-200,0, "Instances", objLin);
-global.party[1] = instance_create_layer(-200,0, "Instances", objAlba);
-global.party[2] = instance_create_layer(-200,0, "Instances", objOrtem);
-global.party[3] = instance_create_layer(-200,0, "Instances", objRaiden);
-global.party[4] = instance_create_layer(-200,0,"Instances", objKazuha);
-global.party[5] = instance_create_layer(-200,0,"Instances", objNoah);
+    var character_list = [objLin, objAlba, objOrtem, objFarouk, objChrome, objNoah];
 
 
+    var spacing = 90;
+    var start_x = (room_width - (190 * array_length(character_list) + spacing * (array_length(character_list) - 1))) / 2;
+    var start_y = room_height - 215;
+
+
+    for (var i = 0; i < array_length(character_list); i++) {
+        var char_x = start_x + (230 + spacing) * i; 
+        var char_y = start_y + 100;               
+
+        var character = instance_create_layer(char_x, char_y, "Instances", character_list[i]);
+
+        // Set karakter agar tidak terlihat
+        character.visible = false;
+
+        array_push(global.party, character);
+    }
 }
