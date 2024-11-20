@@ -62,8 +62,12 @@ if (current_actor.action_value >= 0) {
         with (objButtonDown) {
             instance_destroy();
         }
-        instance_create_layer(current_actor.x, current_actor.y - 130, "Instances", objButtonUp); 
-        instance_create_layer(current_actor.x, current_actor.y - 100, "Instances", objButtonDown);
+		with(objButtonAction){
+            instance_destroy();
+        }
+        instance_create_layer(current_actor.x + 105, current_actor.y - 200, "Instances", objButtonUp); 
+        instance_create_layer(current_actor.x + 105, current_actor.y - 170, "Instances", objButtonDown);
+        instance_create_layer(current_actor.x, current_actor.y - 170, "Instances", objButtonAction);
 
     }
 	else {

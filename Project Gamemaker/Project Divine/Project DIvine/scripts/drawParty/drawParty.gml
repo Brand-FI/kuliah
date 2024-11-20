@@ -1,6 +1,6 @@
 function drawParty() {
     var spacing = 90;
-    var start_x = (room_width - (190 * array_length(global.party) + spacing * (array_length(global.party) - 1))) / 2;
+    var start_x = (room_width - (192 * array_length(global.party) + spacing * (array_length(global.party) - 1))) / 2;
     var start_y = room_height - 270;
 
     if (global.party != undefined && array_length(global.party) > 0) {
@@ -17,7 +17,11 @@ function drawParty() {
                 // draw nama character
                 draw_set_font(FontSilverLarge);
                 draw_set_color(c_white); // Set color for text
+				/*
+				TESTING
                 draw_text((start_x - 30) + (230 + spacing) * i, start_y , character.name);
+				*/ 
+				
                 // draw Health bar
 				var hp_percentage = (character.hp / character.max_health) * 100;
                 draw_healthbar(

@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"objButtonAction",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"objButtonAction",
   "overriddenProperties":[],
@@ -27,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"button_attack",
+    "path":"sprites/button_attack/button_attack.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
