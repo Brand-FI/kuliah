@@ -1,6 +1,4 @@
 
-
-
 // Masukkin party ke participant
 global.participants = [];  
     for (var i = 0; i < array_length(global.party); i++) {
@@ -8,7 +6,7 @@ global.participants = [];
     }
 
 // semua party + enemy
-array_push(global.participants, currentEnemy[1]);
+array_push(global.participants, currentEnemy[0]);
 
 // atur speed
 for (var i = 0; i < array_length(global.participants); i++) {
@@ -31,9 +29,6 @@ for (var i = 0; i < array_length(global.participants); i++) {
         array_push(enemies_alive, global.participants[i]);
     }
 }
-// Bikin ObjButton
-
-
 
 
 // jika participant tidak ada maka selesai
@@ -47,8 +42,6 @@ array_sort(global.participants, function(a, b) {
     return a.action_value - b.action_value;
 });
 
-// Process the turn for the participant with the lowest action_value
-// Ambil actor dengan action_value terendah
 
 // Ambil actor dengan action_value terendah
 var current_actor = global.participants[0];

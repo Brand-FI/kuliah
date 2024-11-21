@@ -10,12 +10,12 @@ function spawnEnemy()
 		if(number == 0)
 		{
 			//PLACEHOLDER
-			currentEnemy[1] = instance_create_layer(960,360, "enemy_instances", objWolf);	
+			currentEnemy[0] = instance_create_layer(960,360, "enemy_instances", objWolf);	
 		}
 		else
 		{
 			//PLACEHOLDER
-			currentEnemy[1] = instance_create_layer(960,360, "enemy_instances", objGhoul);	
+			currentEnemy[0] = instance_create_layer(960,360, "enemy_instances", objGhoul);	
 		}
 		 instance_create_layer(960,360, "enemy_instances", objBattleManager);
 		

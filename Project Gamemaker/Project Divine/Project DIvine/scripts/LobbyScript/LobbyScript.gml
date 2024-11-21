@@ -1,10 +1,8 @@
 //Script jalan saat di LOBBY
 globalvar currentEnemy [];
 
-globalvar saveFile;
-saveFile = "divine.dat";
-
 randomize()
+
 globalvar combatState;
 combatState = false;
 
