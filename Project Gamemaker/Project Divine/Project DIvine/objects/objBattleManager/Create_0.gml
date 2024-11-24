@@ -1,0 +1,2 @@
+globalvar turnOrder;
+turnOrder = false;

@@ -1,4 +1,4 @@
-if (combatState) {
+if (combatState = true) {
     var display_limit = 6;      // Jumlah karakter
     var start_x = 55;          // Posisi awal di X
     var start_y = 40;          // Posisi awal di Y
