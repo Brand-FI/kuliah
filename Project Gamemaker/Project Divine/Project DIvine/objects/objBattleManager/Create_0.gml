@@ -1,6 +1,7 @@
 globalvar turnOrder;
 turnOrder = false;
 
+
 global.participants = [];
 
 // Masukkan party dan musuh ke array participants

@@ -72,7 +72,6 @@
     {"id":{"name":"Lobby","path":"rooms/Lobby/Lobby.yy",},},
     {"id":{"name":"attack_random","path":"scripts/attack_random/attack_random.yy",},},
     {"id":{"name":"changeBG","path":"scripts/changeBG/changeBG.yy",},},
-    {"id":{"name":"combatSystem","path":"scripts/combatSystem/combatSystem.yy",},},
     {"id":{"name":"createParty","path":"scripts/createParty/createParty.yy",},},
     {"id":{"name":"delSave","path":"scripts/delSave/delSave.yy",},},
     {"id":{"name":"doAction","path":"scripts/doAction/doAction.yy",},},

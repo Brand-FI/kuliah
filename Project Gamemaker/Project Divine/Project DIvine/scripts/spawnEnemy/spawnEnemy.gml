@@ -2,7 +2,6 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function spawnEnemy()
 {
-	
 	var roomName = room_get_name(room);
 	if(roomName = "kilusplain")
 	{

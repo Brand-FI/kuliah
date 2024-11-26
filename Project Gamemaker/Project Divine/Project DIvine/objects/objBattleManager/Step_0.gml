@@ -24,14 +24,17 @@ if (turnOrder == true)
 	    return a.action_value - b.action_value;
 	});
 	
-	if (global.participants[0].team == "character") 
+	if(combatState == true)
 	{
-	    instance_create_layer(global.participants[0].x, global.participants[0].y, "Instances", objTurnOrder);
-		turnOrder = false;
-	} 
-	else 
-	{
-	   attack_random()
-	   turnOrder = true;
+		if (global.participants[0].team == "character") 
+		{
+		    instance_create_layer(global.participants[0].x, global.participants[0].y, "Instances", objTurnOrder);
+			turnOrder = false;
+		} 
+		else 
+		{
+		   attack_random()
+		   turnOrder = true;
+		}	
 	}
 }
