@@ -1,51 +1,37 @@
-
-if (turnOrder = false)
+if (turnOrder == true) 
 {
-		// Masukkin party ke participant
-	global.participants = [];  
-	    for (var i = 0; i < array_length(global.party); i++) {
-	        global.participants[array_length(global.participants)] = global.party[i];
-	    }
-
-	// semua party + enemy
-	array_push(global.participants, currentEnemy[0]);
-
-	// atur speed
-	for (var i = 0; i < array_length(global.participants); i++) {
-	    global.participants[i].action_value = 10000 / global.participants[i].spd;
-	}
-
-	// remove participant yang mati
-	global.participants = array_filter(global.participants, function(member) {
-	    return member.hp > 0;
-	});
-
-	// atur kembali participant yang masih hidup dan musuh yang hidup
-	var players_alive = [];
-	var enemies_alive = [];
-
-	for (var i = 0; i < array_length(global.participants); i++) {
-	    if (global.participants[i].team == "character") {
-	        array_push(players_alive, global.participants[i]);
-	    } else {
-	        array_push(enemies_alive, global.participants[i]);
-	    }
-	}
-
-
-	// jika participant tidak ada maka selesai
-	if (array_length(players_alive) == 0 || array_length(enemies_alive) == 0) {
-	    combatState = false;
-	    return;
-	}
-
-	// Sort participants action value dari terkecil
+    for (var i = array_length(global.participants) - 1; i >= 0; i--) 
+    {
+        if (global.participants[i].hp <= 0) 
+        {
+            array_delete(global.participants, i, 1);
+        }
+    }
+    var characters_alive = array_length(array_filter(global.participants, function(p) 
+	{ return p.team == "character" && p.hp > 0; }));
+	
+    var enemies_alive = array_length(array_filter(global.participants, function(p) 
+	{ return p.team == "enemy" && p.hp > 0; }));
+	
+    if (characters_alive == 0 || enemies_alive == 0) 
+	{
+        combatState = false;  
+        instance_destroy(objBattleManager);
+    }
+	global.participants[0].action_value += 10000 / global.participants[0].spd;
+	
 	array_sort(global.participants, function(a, b) {
 	    return a.action_value - b.action_value;
 	});
 	
-	turnOrder = true;
-	instance_create_layer(960,360, "Instances", objTurnOrder);
-	
-	
+	if (global.participants[0].team == "character") 
+	{
+	    instance_create_layer(global.participants[0].x, global.participants[0].y, "Instances", objTurnOrder);
+		turnOrder = false;
+	} 
+	else 
+	{
+	   attack_random()
+	   turnOrder = true;
+	}
 }
