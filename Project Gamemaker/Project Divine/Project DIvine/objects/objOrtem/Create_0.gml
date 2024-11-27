@@ -1,7 +1,7 @@
 name = "Ortem";
 hp  = 5000;
 max_health = 5000;
-mana = 50;
+mana = 0;
 max_mana = 50;
 spd = 108
 attack = 10;
@@ -11,6 +11,13 @@ team = "character";
 
 banner_sprite = spr_banner_ortem;
 turn_sprite = spr_turn_ortem;
+
+function ManaRegen()
+{
+	var manaMultipler;
+	manaMultipler = 0.15;
+	mana += max_mana * manaMultipler;
+}
 
 function NormalAttack()
 {

@@ -9,7 +9,8 @@ fade_in = false;
 fade_alpha = 0;
 new_bg_sprite = noone; 
 
-//Membuat Party
+
+
 createParty()
 
 

@@ -16,6 +16,7 @@ if (turnOrder == true)
     if (characters_alive == 0 || enemies_alive == 0) 
 	{
         combatState = false;  
+		PlaySound();
         instance_destroy(objBattleManager);
     }
 	global.participants[0].action_value += 10000 / global.participants[0].spd;
@@ -28,6 +29,7 @@ if (turnOrder == true)
 	{
 		if (global.participants[0].team == "character") 
 		{
+			global.participants[0].ManaRegen(); // Mana regen setiap turn dimulai
 		    instance_create_layer(global.participants[0].x, global.participants[0].y, "Instances", objTurnOrder);
 			turnOrder = false;
 		} 

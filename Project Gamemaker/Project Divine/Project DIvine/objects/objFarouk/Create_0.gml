@@ -1,7 +1,7 @@
 name = "Farouk";
 hp  = 1000;
 max_health = 1000;
-mana = 50;
+mana = 0;
 max_mana = 50;
 spd = 100
 attack = 10;
@@ -11,6 +11,13 @@ team = "character";
 
 banner_sprite = spr_banner_farouk;
 turn_sprite = spr_turn_farouk;
+
+function ManaRegen()
+{
+	var manaMultipler;
+	manaMultipler = 0.15;
+	mana += max_mana * manaMultipler;
+}
 
 function NormalAttack()
 {

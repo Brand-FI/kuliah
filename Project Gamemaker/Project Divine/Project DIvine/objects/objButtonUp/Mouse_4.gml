@@ -1,4 +1,4 @@
-audio_play_sound(soundButtonClick, 1, false);
+audio_play_sound(button_2, 1, false);
 
 if(objButtonAction.sprite_index == button_attack)
 {

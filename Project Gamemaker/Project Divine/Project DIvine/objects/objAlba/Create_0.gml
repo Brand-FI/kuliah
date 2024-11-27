@@ -1,7 +1,7 @@
 name = "Alba";
-hp  = 200;
+hp  = 3000;
 max_health = 3000;
-mana = 90;
+mana = 0;
 max_mana = 90;
 spd = 114
 attack = 10;
@@ -11,6 +11,13 @@ team = "character";
 
 banner_sprite = spr_banner_alba;
 turn_sprite = spr_turn_alba;
+
+function ManaRegen()
+{
+	var manaMultipler;
+	manaMultipler = 0.15;
+	mana += max_mana * manaMultipler;
+}
 
 function NormalAttack()
 {

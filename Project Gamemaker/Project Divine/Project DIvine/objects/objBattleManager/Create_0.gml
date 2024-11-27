@@ -33,9 +33,11 @@ for (var k = 0; k < array_length(global.participants); k++) {
 array_sort(global.participants, function(a, b) {
     return a.action_value - b.action_value;
 });
+
 // Tentukan turn pertama
 if (global.participants[0].team == "character") 
 {
+	global.participants[0].ManaRegen(); // Mana regen setiap turn dimulai
     instance_create_layer(global.participants[0].x, global.participants[0].y, "Instances", objTurnOrder);
 } 
 else 

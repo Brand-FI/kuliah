@@ -1,5 +1,7 @@
 function spawnEnemy()
 {
+	audio_stop_all()
+	PlaySound()
 	var roomName = room_get_name(room);
 	if(roomName = "kilusplain")
 	{

@@ -1,5 +1,5 @@
 
-audio_play_sound(soundButtonClick, 1, false);
+audio_play_sound(button_2, 1, false);
 
 
 if(doAction())
@@ -8,5 +8,6 @@ if(doAction())
 	instance_destroy(objTurnOrder);
 	instance_destroy(objButtonDown);
 	instance_destroy(objButtonUp);
-	turnOrder = true;	
+	turnOrder = true;
+	
 }
