@@ -10,3 +10,4 @@ level = 1;
 team = "character";
 
 banner_sprite = "";
+turn_sprite = "";

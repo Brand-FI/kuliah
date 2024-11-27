@@ -10,3 +10,16 @@ level = 1;
 team = "character";
 
 banner_sprite = spr_banner_chrome;
+turn_sprite = spr_turn_chrome;
+
+function NormalAttack()
+{
+		for (var i = 0; i < array_length(global.participants); i++) 
+		{
+		    if (global.participants[i].team == "enemy") 
+			{
+				var damage = attack * 30
+				global.participants[i].hp -= damage;
+			}
+		}
+}

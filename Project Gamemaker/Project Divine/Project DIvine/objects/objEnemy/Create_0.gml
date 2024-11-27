@@ -6,3 +6,5 @@ attack = 200;
 skills = [];
 level = 1;
 team = "enemy";
+
+turn_sprite = "";
