@@ -1,3 +1,5 @@
+y = 550;
+
 name = "Ghoul";
 max_health = 4500;
 hp = max_health;
@@ -21,7 +23,7 @@ function NormalAttack()
     if (array_length(arrPlayer) > 0) {
 
         var rdm = irandom(array_length(arrPlayer) - 1); 
-        var target = global.participants[arrPlayer[0]];
+        var target = global.participants[arrPlayer[rdm]];
         var damage = attack * 0.5;
         target.hp -= damage;  
     }	
@@ -39,7 +41,7 @@ function SpecialAttack()
     if (array_length(arrPlayer) > 0) {
 
         var rdm = irandom(array_length(arrPlayer) - 1); 
-        var target = global.participants[arrPlayer[0]];
+        var target = global.participants[arrPlayer[rdm]];
         var damage = attack * 1;
         target.hp -= damage;  
     }	

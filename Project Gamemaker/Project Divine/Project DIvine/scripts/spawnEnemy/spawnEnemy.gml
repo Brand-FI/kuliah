@@ -5,8 +5,8 @@ function spawnEnemy()
 	var roomName = room_get_name(room);
 	if(roomName = "kilusplain")
 	{
-		var number = irandom(2)
-		if(number == 0)
+		
+		if(countStep % 10 >= 0 && countStep % 10 < 5)
 		{
 			currentEnemy[0] = instance_create_layer(960,360, "enemy_instances", objWolf);	
 		}

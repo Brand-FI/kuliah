@@ -42,7 +42,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"Project DIvine",
   "resources":[
@@ -109,6 +109,7 @@
     {"id":{"name":"soundBGM1","path":"sounds/soundBGM1/soundBGM1.yy",},},
     {"id":{"name":"soundButtonClick","path":"sounds/soundButtonClick/soundButtonClick.yy",},},
     {"id":{"name":"whip","path":"sounds/whip/whip.yy",},},
+    {"id":{"name":"Backpack_true","path":"sprites/Backpack_true/Backpack_true.yy",},},
     {"id":{"name":"button_attack","path":"sprites/button_attack/button_attack.yy",},},
     {"id":{"name":"button_down","path":"sprites/button_down/button_down.yy",},},
     {"id":{"name":"button_skill","path":"sprites/button_skill/button_skill.yy",},},

@@ -6,8 +6,8 @@ if (combatState != true)
 	{
         wKeyCooldown = wKeyCooldownTime; 
 		changeBG(roomName, countStep);
-        countStep++;
 		randomSpawnMob();	
+        countStep++;
 		}
 
     }
