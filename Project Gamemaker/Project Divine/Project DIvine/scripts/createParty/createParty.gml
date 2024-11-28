@@ -1,4 +1,5 @@
-function createParty() {
+function createParty() 
+{
     global.party = [];
 
     var character_list = [objLin, objAlba, objOrtem, objFarouk, objChrome, objNoah];

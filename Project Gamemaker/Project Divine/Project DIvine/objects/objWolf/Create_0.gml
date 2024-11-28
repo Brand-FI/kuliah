@@ -1,10 +1,15 @@
 y = 640;
 
+damageDiterima = 0;         
+globalvar show_damage;
+globalvar dmgColor;
+show_damage = false;
+	
 name = "Wolf";
 max_health = 4500;
 hp = max_health;
 spd = 120
-attack = 200;
+attack = 250;
 skills = [];
 level = 1;
 team = "enemy";

@@ -42,10 +42,11 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"Project DIvine",
   "resources":[
+    {"id":{"name":"FontDamage","path":"fonts/FontDamage/FontDamage.yy",},},
     {"id":{"name":"FontSilver","path":"fonts/FontSilver/FontSilver.yy",},},
     {"id":{"name":"FontSilverLarge","path":"fonts/FontSilverLarge/FontSilverLarge.yy",},},
     {"id":{"name":"objAlba","path":"objects/objAlba/objAlba.yy",},},

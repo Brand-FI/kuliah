@@ -1,12 +1,21 @@
+draw_self();  
 
-draw_self();
 
+if (show_damage) {
+    var text_x = x + 300;
+    var text_y = y - 120;
 
-var hp_percentage = (hp / max_health) * 100; 
-var bar_x1 = x - 115; 
-var bar_y1 = y + sprite_height + 10; 
-var bar_x2 = x + 115; 
-var bar_y2 = y + sprite_height + 20; 
+    draw_set_font(FontDamage);
+    
+	//text stroke
+    draw_set_color(c_black);
+    draw_text(text_x - 2, text_y - 2, string(damageDiterima));
+    draw_text(text_x + 2, text_y - 2, string(damageDiterima));
+    draw_text(text_x - 2, text_y + 2, string(damageDiterima));
+    draw_text(text_x + 2, text_y + 2, string(damageDiterima));
 
-draw_healthbar(bar_x1, bar_y1, bar_x2, bar_y2, hp_percentage, c_black, c_red, c_lime, 0, true, true);
+    draw_set_color(dmgColor); 
+    draw_text(text_x, text_y, string(damageDiterima));
 
+    draw_set_color(c_white);
+}

@@ -19,14 +19,20 @@ function ManaRegen()
 	mana += max_mana * manaMultipler;
 }
 
+
 function NormalAttack()
 {
+	var damage;
 		for (var i = 0; i < array_length(global.participants); i++) 
 		{
 		    if (global.participants[i].team == "enemy") 
 			{
-				var damage = attack * 30
-				global.participants[i].hp -= damage;
+				damage = attack * 30
+				var musuh = global.participants[i]
+				musuh.hp -= damage;
+				musuh.damageDiterima = damage;
+				dmgColor = c_orange;
+				show_damage = true;
 			}
 		}
 }
@@ -39,9 +45,13 @@ function BasicSkill()
 			{
 				if(mana >= 20)
 				{
-					damage = attack * 70;
-					global.participants[i].hp -= damage;	
+					damage = attack * 70;	
 					mana -= 25
+					var musuh = global.participants[i]
+					musuh.hp -= damage;
+					musuh.damageDiterima = damage;
+					dmgColor = c_orange;
+					show_damage = true;
 					return true;
 				}
 				else
@@ -60,9 +70,13 @@ function SpecialSkill()
 			{
 				if(mana == max_mana)
 				{
-					damage = attack * 300
-					global.participants[i].hp -= damage;	
+					damage = attack * 300	
 					mana -= max_mana;
+					var musuh = global.participants[i]
+					musuh.hp -= damage;
+					musuh.damageDiterima = damage;
+					dmgColor = c_orange;
+					show_damage = true;
 					return true;
 				}
 				else

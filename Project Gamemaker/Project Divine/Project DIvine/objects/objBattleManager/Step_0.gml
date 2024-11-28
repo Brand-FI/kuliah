@@ -4,6 +4,10 @@ if (turnOrder == true)
     {
         if (global.participants[i].hp <= 0) 
         {
+			if(global.participants[i].team == "enemy")
+			{
+				instance_destroy(global.participants[i])
+			}
             array_delete(global.participants, i, 1);
         }
     }
@@ -17,8 +21,9 @@ if (turnOrder == true)
 	{
         combatState = false;  
 		PlaySound();
-        instance_destroy(objBattleManager);
+        instance_destroy();
     }
+	
 	global.participants[0].action_value += 10000 / global.participants[0].spd;
 	
 	array_sort(global.participants, function(a, b) {

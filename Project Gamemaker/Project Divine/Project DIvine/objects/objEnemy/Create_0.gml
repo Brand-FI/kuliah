@@ -8,3 +8,7 @@ level = 1;
 team = "enemy";
 
 turn_sprite = "";
+
+damageDiterima = 0;         
+globalvar show_damage;
+show_damage = false;

@@ -1,5 +1,10 @@
 y = 550;
 
+damageDiterima = 0;         
+globalvar show_damage;
+show_damage = false;
+globalvar dmgColor;
+
 name = "Ghoul";
 max_health = 4500;
 hp = max_health;
