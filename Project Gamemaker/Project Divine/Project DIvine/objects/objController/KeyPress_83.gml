@@ -1,4 +1,4 @@
-if (combatState != true) 
+if (combatState != true && gamePause = false) 
 {
 	var roomName = room_get_name(room)
 

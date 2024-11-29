@@ -5,7 +5,6 @@ function spawnEnemy()
 	var roomName = room_get_name(room);
 	if(roomName = "kilusplain")
 	{
-		
 		if(countStep % 10 >= 0 && countStep % 10 < 5)
 		{
 			currentEnemy[0] = instance_create_layer(960,360, "enemy_instances", objWolf);	
@@ -16,5 +15,24 @@ function spawnEnemy()
 		}
 		 instance_create_layer(960,360, "enemy_instances", objBattleManager);
 		
+	}
+	
+	if(roomName = "kilusforest")
+	{
+		if(countStep % 10 >= 0 && countStep % 10 < 5)
+		{
+			currentEnemy[0] = instance_create_layer(960,540, "enemy_instances", objWSnake);	
+		}
+		else
+		{
+			currentEnemy[0] = instance_create_layer(960,540, "enemy_instances", objBSnake);	
+		}
+		 instance_create_layer(960,360, "enemy_instances", objBattleManager);
+	}
+	
+	if(roomName = "levinastemple")
+	{
+		currentEnemy[0] = instance_create_layer(960,360, "enemy_instances", objLevina);
+		instance_create_layer(960,360, "enemy_instances", objBattleManager);
 	}
 }

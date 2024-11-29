@@ -33,7 +33,7 @@ function NormalAttack()
 		(
 			target.x,
 			target.y - 170,
-			target.depth+1,
+			-100,
 			objBattleText,
 			{font: FontDamage, col: dmgColor, text: string(damage)}
 		);
@@ -60,7 +60,7 @@ function SpecialAttack()
 		(
 			target.x,
 			target.y- 170,
-			target.depth+1,
+			-100,
 			objBattleText,
 			{font: FontDamage, col: dmgColor, text: string(damage)}
 		);

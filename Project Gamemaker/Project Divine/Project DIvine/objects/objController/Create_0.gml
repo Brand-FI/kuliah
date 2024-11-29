@@ -1,4 +1,3 @@
-
 wKeyCooldown = 0; 
 wKeyCooldownTime = 60; // Cooldown durasi 1 detik
 
@@ -12,7 +11,3 @@ new_bg_sprite = noone;
 
 
 createParty()
-
-
-
-

@@ -32,8 +32,8 @@ function NormalAttack()
 		instance_create_depth
 		(
 			target.x,
-			target.y,
-			target.depth-1,
+			target.y - 170,
+			-100,
 			objBattleText,
 			{font: FontDamage, col: dmgColor, text: string(damage)}
 		);
@@ -59,8 +59,8 @@ function SpecialAttack()
 		instance_create_depth
 		(
 			target.x,
-			target.y,
-			target.depth-1,
+			target.y - 170,
+			-100,
 			objBattleText,
 			{font: FontDamage, col: dmgColor, text: string(damage)}
 		);

@@ -6,7 +6,7 @@ function PlaySound()
 		audio_stop_all()
 		audio_play_sound(lobby, 1, true);
 	}
-	else if(nama == "kilusplain")
+	else 
 	{
 		if(combatState == false)
 		{
