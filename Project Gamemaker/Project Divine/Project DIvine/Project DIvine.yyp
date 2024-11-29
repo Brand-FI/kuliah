@@ -51,6 +51,7 @@
     {"id":{"name":"FontSilverLarge","path":"fonts/FontSilverLarge/FontSilverLarge.yy",},},
     {"id":{"name":"objAlba","path":"objects/objAlba/objAlba.yy",},},
     {"id":{"name":"objBattleManager","path":"objects/objBattleManager/objBattleManager.yy",},},
+    {"id":{"name":"objBattleText","path":"objects/objBattleText/objBattleText.yy",},},
     {"id":{"name":"objButtonAction","path":"objects/objButtonAction/objButtonAction.yy",},},
     {"id":{"name":"objButtonDown","path":"objects/objButtonDown/objButtonDown.yy",},},
     {"id":{"name":"objButtonOption","path":"objects/objButtonOption/objButtonOption.yy",},},

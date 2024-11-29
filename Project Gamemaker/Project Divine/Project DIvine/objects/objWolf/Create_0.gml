@@ -1,9 +1,6 @@
 y = 640;
 
-damageDiterima = 0;         
-globalvar show_damage;
 globalvar dmgColor;
-show_damage = false;
 	
 name = "Wolf";
 max_health = 4500;
@@ -30,7 +27,16 @@ function NormalAttack()
         var rdm = irandom(array_length(arrPlayer) - 1); 
         var target = global.participants[arrPlayer[rdm]];
         var damage = attack * 0.5;
-        target.hp -= damage;  
+        target.hp -= damage;
+		dmgColor = c_gray;
+		instance_create_depth
+		(
+			target.x,
+			target.y - 170,
+			target.depth+1,
+			objBattleText,
+			{font: FontDamage, col: dmgColor, text: string(damage)}
+		);
     }	
 }
 function SpecialAttack()
@@ -48,6 +54,15 @@ function SpecialAttack()
         var rdm = irandom(array_length(arrPlayer) - 1); 
         var target = global.participants[arrPlayer[rdm]];
         var damage = attack * 1;
-        target.hp -= damage;  
+        target.hp -= damage;
+		dmgColor = c_gray;
+		instance_create_depth
+		(
+			target.x,
+			target.y- 170,
+			target.depth+1,
+			objBattleText,
+			{font: FontDamage, col: dmgColor, text: string(damage)}
+		);
     }	
 }

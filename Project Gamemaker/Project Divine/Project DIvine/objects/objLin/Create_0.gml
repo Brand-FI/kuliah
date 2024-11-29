@@ -31,7 +31,14 @@ function NormalAttack()
 				musuh.hp -= damage;
 				musuh.damageDiterima = damage;
 				dmgColor = c_orange;
-				show_damage = true;
+				instance_create_depth
+				(
+					musuh.x,
+					musuh.y,
+					musuh.depth-1,
+					objBattleText,
+					{font: FontDamage, col: dmgColor, text: string(damage)}
+				);
 			}
 		}
 }
@@ -49,8 +56,15 @@ function BasicSkill()
 					var musuh = global.participants[i]
 					musuh.hp -= damage;
 					musuh.damageDiterima = damage;
-					show_damage = true;
 					dmgColor = c_orange;
+					instance_create_depth
+					(
+						musuh.x,
+						musuh.y,
+						musuh.depth-1,
+						objBattleText,
+						{font: FontDamage, col: dmgColor, text: string(damage)}
+					);
 					return true;
 				}
 				else
@@ -75,7 +89,14 @@ function SpecialSkill()
 					musuh.hp -= damage;
 					musuh.damageDiterima = damage;
 					show_damage = true;
-					dmgColor = c_orange;
+					instance_create_depth
+					(
+						musuh.x,
+						musuh.y,
+						musuh.depth-1,
+						objBattleText,
+						{font: FontDamage, col: dmgColor, text: string(damage)}
+					);
 					return true;
 				}
 				else

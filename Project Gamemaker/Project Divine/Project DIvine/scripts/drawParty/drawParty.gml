@@ -1,4 +1,6 @@
 function drawParty() {
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_middle);
     var spacing = 90;
     var start_x = (room_width - (192 * array_length(global.party) + spacing * (array_length(global.party) - 1))) / 2;
     var start_y = room_height - 270;
@@ -36,7 +38,7 @@ function drawParty() {
                 // HP text
                 draw_set_font(FontSilver);
                 draw_set_color(c_white); // ganti warna text
-                draw_text((start_x - 50) + (230 + spacing) * i, start_y + 163, "HP: " + string(character.hp) + "/" + string(character.max_health));
+                draw_text((start_x) + (230 + spacing) * i, start_y + 178, "HP: " + string(character.hp) + "/" + string(character.max_health));
 
                 // Mana bar
                 var mana_percentage = (character.mana / character.max_mana) * 100;
@@ -51,7 +53,7 @@ function drawParty() {
 
                 // MP text
                 draw_set_color(c_white); // Set color for text
-                draw_text((start_x - 50) + (230 + spacing) * i, start_y + 215, "MP: " + string(character.mana) + "/" + string(character.max_mana));				draw_sprite(spr_player_frame, 0, start_x + (230 + spacing) * i, start_y + 105);
+                draw_text((start_x) + (230 + spacing) * i, start_y + 230, "MP: " + string(character.mana) + "/" + string(character.max_mana));				draw_sprite(spr_player_frame, 0, start_x + (230 + spacing) * i, start_y + 105);
             }
         }
     }

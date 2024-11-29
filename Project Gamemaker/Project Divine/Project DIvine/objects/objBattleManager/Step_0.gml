@@ -41,7 +41,7 @@ if (turnOrder == true)
 		else 
 		{
 		   attack_random()
-		   turnOrder = true;
+		   turnOrder = false;
 		}	
 	}
 }

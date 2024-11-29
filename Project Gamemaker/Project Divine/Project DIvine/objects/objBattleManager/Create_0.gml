@@ -39,5 +39,4 @@ if (global.participants[0].team == "character")
 else 
 {
    attack_random()
-   turnOrder = true;
 }
