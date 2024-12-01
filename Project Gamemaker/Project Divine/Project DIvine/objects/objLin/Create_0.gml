@@ -1,6 +1,6 @@
 name = "Lin";
-hp = 1000;
-max_health = 1000;
+max_health = 1750;
+hp = max_health;
 mana = 0;
 max_mana = 50;
 spd = 140;

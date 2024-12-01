@@ -1,6 +1,6 @@
 name = "Farouk";
-hp  = 1000;
 max_health = 1000;
+hp = max_health
 mana = 0;
 max_mana = 50;
 spd = 100

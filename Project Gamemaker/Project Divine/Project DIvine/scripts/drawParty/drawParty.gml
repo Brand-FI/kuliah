@@ -18,7 +18,7 @@ function drawParty() {
 
                 // draw nama character
                 draw_set_font(FontSilverLarge);
-                draw_set_color(c_white); // Set color for text
+                draw_set_color(c_white); 
 				/*
 				TESTING
                 draw_text((start_x - 30) + (230 + spacing) * i, start_y , character.name);
@@ -52,7 +52,7 @@ function drawParty() {
                 );
 
                 // MP text
-                draw_set_color(c_white); // Set color for text
+                draw_set_color(c_white); 
                 draw_text((start_x) + (230 + spacing) * i, start_y + 230, "MP: " + string(character.mana) + "/" + string(character.max_mana));				draw_sprite(spr_player_frame, 0, start_x + (230 + spacing) * i, start_y + 105);
             }
         }

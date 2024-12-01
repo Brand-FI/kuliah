@@ -1,6 +1,6 @@
 name = "Alba";
-hp  = 3000;
-max_health = 3000;
+hp  = 1300;
+max_health = 1300;
 mana = 0;
 max_mana = 90;
 spd = 114

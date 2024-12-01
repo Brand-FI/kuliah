@@ -16,7 +16,6 @@ function createParty()
 
         var character = instance_create_layer(char_x, char_y, "Instances", character_list[i]);
 
-        // Set karakter agar tidak terlihat
         character.visible = false;
 
         array_push(global.party, character);

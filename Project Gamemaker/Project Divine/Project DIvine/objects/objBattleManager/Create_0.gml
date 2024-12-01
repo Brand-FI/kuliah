@@ -1,24 +1,27 @@
 globalvar turnOrder;
 turnOrder = false;
+updateParty();
 
 global.participants = [];
 
-for (var i = 0; i < array_length(global.party); i++) {
-    array_push(global.participants, global.party[i]);
+for (var i = array_length(global.party) - 1; i >= 0; i--) 
+{
+    if (global.party[i].hp > 0) 
+    {
+        array_push(global.participants, global.party[i]);
+    } 
+    else 
+    {
+        array_delete(global.party, i, 1);
+    }
 }
+
 
 for (var j = 0; j < array_length(currentEnemy); j++) {
     array_push(global.participants, currentEnemy[j]);
 }
 
-//pengecekan apakah di party ada yang mati
-for (var i = array_length(global.participants) - 1; i >= 0; i--) 
-{
-    if (global.participants[i].hp <= 0) 
-	{
-        array_delete(global.participants, i, 1);
-    }
-}
+
 
 // Hitung action value awal
 for (var k = 0; k < array_length(global.participants); k++) {

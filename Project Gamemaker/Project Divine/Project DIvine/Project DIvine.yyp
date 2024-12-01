@@ -97,6 +97,7 @@
     {"id":{"name":"randomSpawnMob","path":"scripts/randomSpawnMob/randomSpawnMob.yy",},},
     {"id":{"name":"saveState","path":"scripts/saveState/saveState.yy",},},
     {"id":{"name":"spawnEnemy","path":"scripts/spawnEnemy/spawnEnemy.yy",},},
+    {"id":{"name":"updateParty","path":"scripts/updateParty/updateParty.yy",},},
     {"id":{"name":"alert","path":"sounds/alert/alert.yy",},},
     {"id":{"name":"backpack","path":"sounds/backpack/backpack.yy",},},
     {"id":{"name":"battle","path":"sounds/battle/battle.yy",},},

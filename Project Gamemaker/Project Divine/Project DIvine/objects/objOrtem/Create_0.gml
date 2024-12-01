@@ -1,6 +1,6 @@
 name = "Ortem";
-hp  = 5000;
-max_health = 5000;
+max_health = 3500;
+hp = max_health;
 mana = 0;
 max_mana = 50;
 spd = 108

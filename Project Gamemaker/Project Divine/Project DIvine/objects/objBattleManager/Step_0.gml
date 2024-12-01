@@ -1,16 +1,32 @@
 if (turnOrder == true) 
 {
-    for (var i = array_length(global.participants) - 1; i >= 0; i--) 
-    {
-        if (global.participants[i].hp <= 0) 
-        {
-			if(global.participants[i].team == "enemy")
-			{
-				instance_destroy(global.participants[i])
-			}
-            array_delete(global.participants, i, 1);
-        }
-    }
+	for (var i = array_length(global.participants) - 1; i >= 0; i--) 
+	{
+	    if (global.participants[i].hp <= 0) 
+	    {
+	        // Destroy the instance if it exists
+	        if (instance_exists(global.participants[i])) 
+	        {
+	            instance_destroy(global.participants[i]);
+	        }
+
+	        // Manually search for the participant in global.party and delete it
+	        for (var j = 0; j < array_length(global.party); j++) 
+	        {
+	            if (global.party[j] == global.participants[i]) 
+	            {
+	                // Found the matching participant in party, delete it
+	                array_delete(global.party, j, 1);
+	                break;  // No need to continue the loop once it's deleted
+	            }
+	        }
+
+	        // Delete the participant from global.participants
+	        array_delete(global.participants, i, 1);
+	    }
+	}
+
+
     var characters_alive = array_length(array_filter(global.participants, function(p) 
 	{ return p.team == "character" && p.hp > 0; }));
 	
@@ -21,7 +37,16 @@ if (turnOrder == true)
 	{
         combatState = false;  
 		PlaySound();
-        instance_destroy();
+		// jika ada yang mati dari global.party maka dihapus dari party
+		for (var i = array_length(global.party) - 1; i >= 0; i--) 
+		{
+		    if (global.party[i].hp <= 0) 
+		    {
+		        array_delete(global.party, i, 1);
+				instance_destroy(global.party[i]);
+		    }
+		}
+		instance_destroy();
     }
 	
 	global.participants[0].action_value += 10000 / global.participants[0].spd;
@@ -34,6 +59,7 @@ if (turnOrder == true)
 	{
 		if (global.participants[0].team == "character") 
 		{
+			updateParty();
 			global.participants[0].ManaRegen(); // Mana regen setiap turn dimulai
 		    instance_create_layer(global.participants[0].x, global.participants[0].y, "Instances", objTurnOrder);
 			turnOrder = false;

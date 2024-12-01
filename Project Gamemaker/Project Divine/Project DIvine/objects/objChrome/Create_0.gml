@@ -1,9 +1,9 @@
 name = "Chrome";
-hp  = 1000;
-max_health = 1000;
+max_health = 1300;
+hp = max_health;
 mana = 0;
 max_mana = 200;
-spd = 120
+spd = 100
 attack = 10;
 skills = [];
 level = 1;
@@ -45,36 +45,34 @@ function NormalAttack()
 }
 function BasicSkill()
 {
-	var damage;
-		for (var i = 0; i < array_length(global.participants); i++) 
-		{
-		    if (global.participants[i].team == "enemy") 
+    if (global.participants[0].mana >= 45) 
+    {
+        for (var i = 0; i < array_length(global.participants); i++) 
+        {
+			if(global.participants[i].team == "character")
 			{
-				if(mana >= 20)
-				{
-					damage = attack * 70;	
-					mana -= 25
-					var musuh = global.participants[i]
-					musuh.hp -= damage;
-					musuh.damageDiterima = damage;
-					dmgColor = c_orange;
-					instance_create_depth
-					(
-						musuh.x,
-						musuh.y,
-						musuh.depth-1,
-						objBattleText,
-						{font: FontDamage, col: dmgColor, text: string(damage)}
-					);
-					return true;
-				}
-				else
-				{
-					return false;	
-				}
+				var heal = max_health * 0.15;
+				var target = global.participants[i];
+				target.hp += heal;
+	            instance_create_depth(
+	                target.x,
+	                target.y - 170,
+	                - 100,
+	                objBattleText,
+	                {font: FontDamage, col: c_lime, text: "+" + string(heal)} 
+	            );	
 			}
-		}
+        }
+		
+        global.participants[0].mana -= 45;
+        return true;
+    }
+    else
+    {
+        return false;  
+    }
 }
+
 function SpecialSkill()
 {
 	var damage;

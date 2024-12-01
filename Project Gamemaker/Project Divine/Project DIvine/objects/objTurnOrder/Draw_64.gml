@@ -1,6 +1,6 @@
 if (combatState == true) 
 {
-    var display_limit = 7;     
+    var display_limit = 7;     // limit yang ditampilkan
     var start_x = 145;         
     var start_y = 60;       
     var spacing = 20;        
@@ -13,7 +13,7 @@ if (combatState == true)
             draw_sprite_ext(actor.turn_sprite, 0, pos_x, pos_y, 1.2, 1.2, 0, c_white, 1);
         } else 
 		{
-            draw_sprite(actor.turn_sprite, 0, pos_x, pos_y);
+            draw_sprite(actor.turn_sprite, 0, pos_x - 70, pos_y);
         }
     }
 }
