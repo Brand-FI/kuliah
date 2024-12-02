@@ -15,7 +15,7 @@ turn_sprite = spr_turn_chrome;
 function ManaRegen()
 {
 	var manaMultipler;
-	manaMultipler = 1.15;
+	manaMultipler = 0.15;
 	mana += max_mana * manaMultipler;
 }
 
@@ -82,7 +82,6 @@ function SpecialSkill()
 			{
 				if(mana == max_mana)
 				{
-					damage = attack * 300	
 					mana -= max_mana;
 					var musuh = global.participants[i]
 					musuh.action_value += 20;
