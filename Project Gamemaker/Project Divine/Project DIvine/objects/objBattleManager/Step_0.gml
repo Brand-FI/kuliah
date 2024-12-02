@@ -4,24 +4,18 @@ if (turnOrder == true)
 	{
 	    if (global.participants[i].hp <= 0) 
 	    {
-	        // Destroy the instance if it exists
 	        if (instance_exists(global.participants[i])) 
 	        {
 	            instance_destroy(global.participants[i]);
-	        }
-
-	        // Manually search for the participant in global.party and delete it
+			}
 	        for (var j = 0; j < array_length(global.party); j++) 
 	        {
 	            if (global.party[j] == global.participants[i]) 
 	            {
-	                // Found the matching participant in party, delete it
 	                array_delete(global.party, j, 1);
-	                break;  // No need to continue the loop once it's deleted
+	                break;  
 	            }
 	        }
-
-	        // Delete the participant from global.participants
 	        array_delete(global.participants, i, 1);
 	    }
 	}

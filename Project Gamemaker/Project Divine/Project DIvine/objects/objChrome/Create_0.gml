@@ -3,7 +3,7 @@ max_health = 1300;
 hp = max_health;
 mana = 0;
 max_mana = 200;
-spd = 100
+spd = 115;
 attack = 10;
 skills = [];
 level = 1;
@@ -15,7 +15,7 @@ turn_sprite = spr_turn_chrome;
 function ManaRegen()
 {
 	var manaMultipler;
-	manaMultipler = 0.15;
+	manaMultipler = 1.15;
 	mana += max_mana * manaMultipler;
 }
 
@@ -85,8 +85,7 @@ function SpecialSkill()
 					damage = attack * 300	
 					mana -= max_mana;
 					var musuh = global.participants[i]
-					musuh.hp -= damage;
-					musuh.damageDiterima = damage;
+					musuh.action_value += 20;
 					dmgColor = c_orange;
 					instance_create_depth
 					(
@@ -94,7 +93,7 @@ function SpecialSkill()
 						musuh.y,
 						musuh.depth-1,
 						objBattleText,
-						{font: FontDamage, col: dmgColor, text: string(damage)}
+						{font: FontDamage, col: dmgColor, text: string("DEBUFF")}
 					);
 					return true;
 				}
