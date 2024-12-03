@@ -19,8 +19,6 @@ if (turnOrder == true)
 	        array_delete(global.participants, i, 1);
 	    }
 	}
-
-
     var characters_alive = array_length(array_filter(global.participants, function(p) 
 	{ return p.team == "character" && p.hp > 0; }));
 	

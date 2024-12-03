@@ -12,7 +12,7 @@ function drawParty() {
             if (instance_exists(character)) {
 			
 
-                draw_sprite(character.banner_sprite, 0, start_x + (230 + spacing) * i, (start_y + 100));
+                draw_sprite(character.banner_sprite, 0, start_x + (230 + spacing) * i, (start_y + 93));
                 // draw frame
 				draw_sprite(spr_player_frame, 0, start_x + (230 + spacing) * i, start_y + 105);
 
@@ -24,7 +24,7 @@ function drawParty() {
                 draw_text((start_x - 30) + (230 + spacing) * i, start_y , character.name);
 				*/ 
 				
-                // draw Health bar
+                // draw hp character
 				var hp_percentage = (character.hp / character.max_health) * 100;
                 draw_healthbar(
                     (start_x - 132) + (230 + spacing) * i, 
@@ -51,7 +51,7 @@ function drawParty() {
                     c_black, c_blue, c_blue, 0, true, true
                 );
 
-                // MP text
+                // Mana Point text
                 draw_set_color(c_white); 
                 draw_text((start_x) + (230 + spacing) * i, start_y + 230, "MP: " + string(character.mana) + "/" + string(character.max_mana));				draw_sprite(spr_player_frame, 0, start_x + (230 + spacing) * i, start_y + 105);
             }
