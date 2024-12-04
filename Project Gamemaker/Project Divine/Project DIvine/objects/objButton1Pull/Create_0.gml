@@ -1,1 +1,2 @@
 state = false;
+clicked = false;

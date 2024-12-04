@@ -33,6 +33,15 @@ function NormalAttack()
 				var musuh = global.participants[i]
 				musuh.hp -= damage;
 				musuh.damageDiterima = damage;
+						var spriteChar = spr_lin_normal;
+						instance_create_depth
+							(
+								musuh.x,
+								musuh.y,
+								musuh.depth-1,
+								objBattleSprite,
+								{font: FontDamage, sprite: spriteChar }
+							);
 				dmgColor = c_orange;
 				instance_create_depth
 				(
@@ -47,65 +56,88 @@ function NormalAttack()
 }
 function BasicSkill()
 {
-	var damage;
+	if(mana >= 20)
+	{
+		var damage;
 		for (var i = 0; i < array_length(global.participants); i++) 
 		{
 		    if (global.participants[i].team == "enemy") 
 			{
-				if(mana >= 20)
-				{
 					damage = attack * 70;	
-					mana -= 25
+					mana -= 20;
 					var musuh = global.participants[i]
 					musuh.hp -= damage;
 					musuh.damageDiterima = damage;
+					var spriteChar = spr_lin_skill;
+					instance_create_depth
+						(
+							musuh.x,
+							musuh.y,
+							musuh.depth-1,
+							objBattleSprite,
+							{font: FontDamage, sprite: spriteChar }
+						);
 					dmgColor = c_orange;
 					instance_create_depth
 					(
 						musuh.x,
 						musuh.y,
-						musuh.depth-1,
+						musuh.depth-2,
 						objBattleText,
 						{font: FontDamage, col: dmgColor, text: string(damage)}
 					);
-					return true;
-				}
-				else
-				{
-					return false;	
-				}
+					
 			}
 		}
+		return true;
+	}
+	else
+	{
+		ManaSkillNeed(mana, 20);
+		return false;
+	}
 }
 function SpecialSkill()
 {
-	var damage;
-		for (var i = 0; i < array_length(global.participants); i++) 
+		if(mana >= max_mana)
 		{
-		    if (global.participants[i].team == "enemy") 
+			var damage;
+			for (var i = 0; i < array_length(global.participants); i++) 
 			{
-				if(mana == max_mana)
+			    if (global.participants[i].team == "enemy") 
 				{
-					damage = attack * 300	
-					mana -= max_mana;
-					var musuh = global.participants[i]
-					musuh.hp -= damage;
-					musuh.damageDiterima = damage;
-					show_damage = true;
-					instance_create_depth
-					(
-						musuh.x,
-						musuh.y,
-						musuh.depth-1,
-						objBattleText,
-						{font: FontDamage, col: dmgColor, text: string(damage)}
-					);
-					return true;
-				}
-				else
-				{
-					return false;		
+						damage = attack * 300	
+						mana -= max_mana;
+						var musuh = global.participants[i]
+						musuh.hp -= damage;
+						musuh.damageDiterima = damage;
+						var spriteChar = spr_lin_special;
+						instance_create_depth
+							(
+								musuh.x,
+								musuh.y,
+								musuh.depth-1,
+								objBattleSprite,
+								{font: FontDamage, sprite: spriteChar }
+							);
+						dmgColor = c_orange;
+						instance_create_depth
+						(
+							musuh.x,
+							musuh.y,
+							musuh.depth-2,
+							objBattleText,
+							{font: FontDamage, col: dmgColor, text: string(damage)}
+						);
+						
 				}
 			}
+			return true;
+		}
+		else
+		{
+			
+		ManaSpecialNeed(max_mana, mana);
+			return false;
 		}
 }

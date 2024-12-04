@@ -95,6 +95,7 @@ function BasicSkill()
 	}
 	else
 	{
+		ManaSkillNeed(mana, 20);
 		return false;
 	}
 }
@@ -137,6 +138,7 @@ function SpecialSkill()
 		}
 		else
 		{
+			ManaSpecialNeed(max_mana, mana);
 			return false;
 		}
 }

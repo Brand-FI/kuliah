@@ -1,6 +1,6 @@
 if (combatState == true) 
 {
-    var display_limit = 7;     // limit yang ditampilkan
+    var display_limit = 6;     // limit yang ditampilkan
     var start_x = 145;         
     var start_y = 60;       
     var spacing = 20;        

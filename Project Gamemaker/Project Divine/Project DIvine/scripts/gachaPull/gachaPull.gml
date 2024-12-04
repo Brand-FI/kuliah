@@ -30,7 +30,8 @@ function gacha_pull()
                 }
                 else
                 {
-                    gacha.remnant += 5;
+				    var rdm = irandom_range(5, 10);
+				    gacha.remnant += rdm;
                     gacha.pity_counter = 0;
                     gacha.rate_gacha = true;
                     return objRemnant;
@@ -48,7 +49,8 @@ function gacha_pull()
                 }
                 else
                 {
-                    gacha.remnant += 5;
+				    var rdm = irandom_range(5, 10);
+				    gacha.remnant += rdm;
                     gacha.pity_counter = 0;
                     gacha.rate_gacha = true;
                     return objRemnant;
@@ -66,7 +68,8 @@ function gacha_pull()
             }
             else
             {
-                gacha.remnant += 5;
+			    var rdm = irandom_range(5, 10);
+			    gacha.remnant += rdm;
                 gacha.pity_counter = 0;
                 gacha.rate_gacha = false;
                 return objRemnant;
@@ -80,7 +83,7 @@ function gacha_pull()
         if (gacha.rate_gacha == false)
         {
             randomize();
-            var rdm = random(1);
+            var rdm = irandom(1);
             if (rdm == 0)
             {
                 if (ds_list_find_index(gacha.character, objLin) == -1)
@@ -92,7 +95,8 @@ function gacha_pull()
                 }
                 else
                 {
-                    gacha.remnant += 5;
+			        var rdm = irandom_range(5, 10);
+			        gacha.remnant += rdm;
                     return objRemnant;
                 }
             }
@@ -108,7 +112,8 @@ function gacha_pull()
                 }
                 else
                 {
-                    gacha.remnant += 5;
+			        var rdm = irandom_range(5, 10);
+			        gacha.remnant += rdm;
                     return objRemnant;
                 }
             }
@@ -131,7 +136,7 @@ function gacha_pull()
     }
     else
     {
-        var rdm = random_range(5, 10);
+        var rdm = irandom_range(5, 10);
         gacha.remnant += rdm;
         return objRemnant;
     }

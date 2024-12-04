@@ -56,6 +56,7 @@ function NormalAttack()
 			}
 		}
 }
+
 function BasicSkill()
 {
 	if(mana >= 20)
@@ -95,9 +96,12 @@ function BasicSkill()
 	}
 	else
 	{
+			
+		ManaSkillNeed(mana, 20);
 		return false;
 	}
 }
+
 function SpecialSkill()
 {
 		if(mana >= max_mana)
@@ -137,6 +141,6 @@ function SpecialSkill()
 		}
 		else
 		{
-			return false;
+			ManaSpecialNeed(max_mana, mana);
 		}
 }
