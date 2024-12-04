@@ -1,12 +1,11 @@
 function createParty() {
     global.party = [];
+	
+    var character_list = global.selectedParty; 
 
-    var character_list = objPlayer.character; 
-    
-    for (var i = 0; i < ds_list_size(character_list); i++) 
-	{
-        var character = ds_list_find_value(character_list, i); 
-        
+    for (var i = 0; i < array_length(character_list); i++) 
+    {
+        var character = character_list[i];
         array_push(global.party, character);
     }
 
@@ -15,7 +14,7 @@ function createParty() {
     var start_y = room_height - 215;
 
     for (var i = 0; i < array_length(global.party); i++) 
-	{
+    {
         var char_x = start_x + (230 + spacing) * i; 
         var char_y = start_y + 100;               
 

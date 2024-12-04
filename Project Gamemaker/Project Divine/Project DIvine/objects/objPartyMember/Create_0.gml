@@ -8,6 +8,9 @@ attack = 10;
 skills = [];
 level = 1;
 team = "character";
+selected = false;
 
 banner_sprite = "";
 turn_sprite = "";
+party_sprite = spr_cloud1;
+party_sprite_transparent = spr_cloud1;

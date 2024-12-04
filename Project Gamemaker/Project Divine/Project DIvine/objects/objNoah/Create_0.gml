@@ -11,6 +11,9 @@ team = "character";
 
 banner_sprite = spr_banner_noah;
 turn_sprite = spr_turn_noah;
+party_sprite = noah_party;
+selected = false;
+party_sprite_transparent = noah_party_transparent;
 
 function ManaRegen()
 {

@@ -6,9 +6,10 @@ if (combatState != true && gamePause = false)
 	{
         wKeyCooldown = wKeyCooldownTime; 
 		changeBG(roomName, countStep);
-		randomSpawnMob();	
-        countStep++;
+		if(array_length(global.party) > 0)
+		{
+				randomSpawnMob();		
 		}
-
+        countStep++;
     }
-	
+}

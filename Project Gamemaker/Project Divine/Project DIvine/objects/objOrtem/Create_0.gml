@@ -11,6 +11,9 @@ team = "character";
 
 banner_sprite = spr_banner_ortem;
 turn_sprite = spr_turn_ortem;
+party_sprite = ortem_party;
+party_sprite_transparent = ortem_party_transparent;
+selected = false;
 
 function ManaRegen()
 {

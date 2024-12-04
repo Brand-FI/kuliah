@@ -11,6 +11,9 @@ team = "character";
 
 banner_sprite = spr_banner_farouk;
 turn_sprite = spr_turn_farouk;
+party_sprite = farouk_party;
+party_sprite_transparent = farouk_party_transparent;
+selected = false;
 
 function ManaRegen()
 {

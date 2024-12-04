@@ -11,6 +11,9 @@ team = "character";
 
 banner_sprite = spr_banner_alba;
 turn_sprite = spr_turn_alba;
+party_sprite = alba_party;
+party_sprite_transparent = alba_party_transparent;
+selected = false;
 
 function ManaRegen()
 {

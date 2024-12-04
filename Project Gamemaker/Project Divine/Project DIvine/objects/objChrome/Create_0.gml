@@ -11,6 +11,9 @@ team = "character";
 
 banner_sprite = spr_banner_chrome;
 turn_sprite = spr_turn_chrome;
+party_sprite = chrome_party;
+party_sprite_transparent = chrome_party_transparent;
+selected = false;
 
 function ManaRegen()
 {
