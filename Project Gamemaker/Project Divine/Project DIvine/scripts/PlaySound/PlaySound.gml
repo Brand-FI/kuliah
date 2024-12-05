@@ -6,7 +6,7 @@ function PlaySound()
 		audio_stop_all()
 		audio_play_sound(lobby, 1, true);
 	}
-	else 
+	else if(nama == "kilusplain")
 	{
 		if(combatState == false)
 		{
@@ -19,5 +19,19 @@ function PlaySound()
 			audio_play_sound(battle, 1, true);	
 		}
 	}
+	else if(nama == "kilusforest")
+	{
+		if(combatState == false)
+		{
+			audio_stop_all()
+			audio_play_sound(night_1, 1, true);
+		}
+		else
+		{
+			audio_stop_all()
+			audio_play_sound(battle, 1, true);	
+		}
+	}
+
 
 }

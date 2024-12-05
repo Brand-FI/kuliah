@@ -57,15 +57,6 @@ function BasicSkill()
 				var heal = max_health * 0.15;
 				var target = global.participants[i];
 				target.hp += heal;
-					var spriteChar = spr_chrome_special;
-					instance_create_depth
-						(
-							global.participants[0].x,
-							global.participants[0].y,
-							global.participants[0].depth-1,
-							objBattleSprite,
-							{font: FontDamage, sprite: spriteChar }
-						);
 	            instance_create_depth(
 	                target.x,
 	                target.y - 170,
@@ -73,6 +64,18 @@ function BasicSkill()
 	                objBattleText,
 	                {font: FontDamage, col: c_lime, text: "+" + string(heal)} 
 	            );	
+			}
+			else
+			{
+					var spriteChar = spr_chrome_special;
+					instance_create_depth
+						(
+							global.participants[i].x,
+							global.participants[i].y,
+							global.participants[i].depth-1,
+							objBattleSprite,
+							{font: FontDamage, sprite: spriteChar }
+						);
 			}
         }
 		
@@ -112,7 +115,7 @@ function SpecialSkill()
 					(
 						musuh.x,
 						musuh.y,
-						musuh.depth-1,
+						musuh.depth-2,
 						objBattleText,
 						{font: FontDamage, col: dmgColor, text: string("SPEED DOWN")}
 					);
