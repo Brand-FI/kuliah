@@ -23,7 +23,7 @@ function PlaySound()
 	{
 		if(combatState == false)
 		{
-			audio_stop_all()
+			audio_stop_all()		
 			audio_play_sound(night_1, 1, true);
 		}
 		else
