@@ -1,4 +1,4 @@
-remnant = 55000;
+remnant = 54000;
 max_pity = 90;                 
 pity_counter = 0;
 rate_gacha = false;
