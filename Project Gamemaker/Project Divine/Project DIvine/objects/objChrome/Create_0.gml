@@ -30,6 +30,7 @@ function NormalAttack()
 		{
 		    if (global.participants[i].team == "enemy") 
 			{
+				audio_play_sound(punch_2, 1, false);
 				damage = attack * 30
 				var musuh = global.participants[i]
 				musuh.hp -= damage;

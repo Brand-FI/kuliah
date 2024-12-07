@@ -25,7 +25,7 @@ function gacha_pull()
                 {
                     ds_list_add(gacha.character, objLin);
                     gacha.pity_counter = 0;
-                    gacha.rate_gacha = true;
+                    gacha.rate_gacha = false;
                     return objLin;
                 }
                 else
@@ -90,7 +90,7 @@ function gacha_pull()
                 {
                     ds_list_add(gacha.character, objLin);
                     gacha.pity_counter = 0;
-                    gacha.rate_gacha = true;
+                    gacha.rate_gacha = false;
                     return objLin;
                 }
                 else
