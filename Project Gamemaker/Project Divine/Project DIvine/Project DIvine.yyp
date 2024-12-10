@@ -85,6 +85,7 @@
     {"id":{"name":"objLin","path":"objects/objLin/objLin.yy",},},
     {"id":{"name":"objMapButton","path":"objects/objMapButton/objMapButton.yy",},},
     {"id":{"name":"objMapSelection","path":"objects/objMapSelection/objMapSelection.yy",},},
+    {"id":{"name":"objMusic","path":"objects/objMusic/objMusic.yy",},},
     {"id":{"name":"objNoah","path":"objects/objNoah/objNoah.yy",},},
     {"id":{"name":"objOrtem","path":"objects/objOrtem/objOrtem.yy",},},
     {"id":{"name":"objPartyMember","path":"objects/objPartyMember/objPartyMember.yy",},},

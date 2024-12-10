@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"objButtonGacha",
+  "%Name":"objMusic",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objButtonGacha",
+  "name":"objMusic",
   "overriddenProperties":[],
   "parent":{
-    "name":"Object Gacha Related",
-    "path":"folders/Objects/Object Gacha Related.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_gacha_button",
-    "path":"sprites/spr_gacha_button/spr_gacha_button.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

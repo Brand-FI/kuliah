@@ -1,5 +1,5 @@
 globalvar currentEnemy [];
-
+PlaySound();
 
 globalvar gamePause;
 gamePause = false;

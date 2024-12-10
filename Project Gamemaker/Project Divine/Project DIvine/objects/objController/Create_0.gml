@@ -3,6 +3,7 @@ wKeyCooldownTime = 60; // Cooldown durasi 1 detik
 
 
 PlaySound();
+countStep = 0;
 countStep++;
 
 fade_out = false;

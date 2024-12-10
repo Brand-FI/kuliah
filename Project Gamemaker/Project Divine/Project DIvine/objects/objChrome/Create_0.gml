@@ -102,7 +102,7 @@ function SpecialSkill()
 				{
 					mana -= max_mana;
 					var musuh = global.participants[i]
-					musuh.action_value += 20;
+					musuh.action_value += 50;
 					var spriteChar = spr_chrome_special;
 					instance_create_depth
 						(
