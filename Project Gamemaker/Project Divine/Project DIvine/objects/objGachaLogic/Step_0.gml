@@ -1,7 +1,6 @@
 if (objButton10Pull.state == true)
 {
     var hasilGacha = gachaPull(10);
-
     for (var i = 0; i < array_length(hasilGacha); i++)
     {
         var result = hasilGacha[i];
@@ -18,7 +17,6 @@ if (objButton10Pull.state == true)
 else if(objButton1Pull.state == true)
 {
     var hasilGacha = gachaPull(1);
-
     for (var i = 0; i < array_length(hasilGacha); i++)
     {
         var result = hasilGacha[i];

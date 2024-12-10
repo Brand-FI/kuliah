@@ -1,5 +1,6 @@
 function gachaPull(numberPull)
 {
+	audio_play_sound(flap, 1, false);
     var results = [];
     for (var i = 0; i < numberPull; i++)
     {

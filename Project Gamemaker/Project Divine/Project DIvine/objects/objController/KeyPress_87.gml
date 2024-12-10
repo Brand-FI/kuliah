@@ -4,7 +4,7 @@ if (combatState != true && gamePause = false)
 
     if ( wKeyCooldown <= 0) 
 	{
-		if (countStep % 5 == 0)
+		if (countStep % 7 == 0)
 		{
 		    PlaySound();
 		}

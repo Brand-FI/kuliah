@@ -87,7 +87,7 @@ function BasicSkill()
 						objBattleText,
 						{font: FontDamage, col: dmgColor, text: string(damage)}
 					);
-					
+					audio_play_sound(blow, 1, false);
 			}
 		}
 		return true;
