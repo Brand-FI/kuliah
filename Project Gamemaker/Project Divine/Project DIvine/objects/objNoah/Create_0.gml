@@ -9,6 +9,7 @@ skills = [];
 level = 1;
 team = "character";
 
+voice = Christian_alright;
 banner_sprite = spr_banner_noah;
 turn_sprite = spr_turn_noah;
 party_sprite = noah_party;

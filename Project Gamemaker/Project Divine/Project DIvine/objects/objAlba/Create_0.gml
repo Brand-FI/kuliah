@@ -9,6 +9,7 @@ skills = [];
 level = 1;
 team = "character";
 
+voice = Kerstyn_go;
 banner_sprite = spr_banner_alba;
 turn_sprite = spr_turn_alba;
 party_sprite = alba_party;

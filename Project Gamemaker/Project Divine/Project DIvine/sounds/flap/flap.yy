@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.916259,
+  "duration":1.518254,
   "name":"flap",
   "parent":{
     "name":"Sounds",

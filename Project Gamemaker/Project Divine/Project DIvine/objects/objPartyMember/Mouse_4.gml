@@ -5,6 +5,6 @@ if(selected == false)
 }
 else
 {
-	audio_play_sound(button_2, 1, false);
+	audio_play_sound(button_2, 2, false);
 	selected = false;	
 }

@@ -9,6 +9,7 @@ skills = [];
 level = 1;
 team = "character";
 
+voice = Sean_great;
 banner_sprite = spr_banner_farouk;
 turn_sprite = spr_turn_farouk;
 party_sprite = farouk_party;

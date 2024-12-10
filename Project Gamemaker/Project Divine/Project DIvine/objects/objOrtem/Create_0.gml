@@ -9,6 +9,7 @@ skills = [];
 level = 1;
 team = "character";
 
+voice = Jonas_go;
 banner_sprite = spr_banner_ortem;
 turn_sprite = spr_turn_ortem;
 party_sprite = ortem_party;

@@ -10,6 +10,7 @@ level = 1;
 team = "character";
 selected = false;
 
+voice = button_1;
 banner_sprite = "";
 turn_sprite = "";
 party_sprite = spr_cloud1;

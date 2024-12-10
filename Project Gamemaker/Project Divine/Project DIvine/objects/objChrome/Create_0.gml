@@ -9,6 +9,7 @@ skills = [];
 level = 1;
 team = "character";
 
+voice = Bromin_lead;
 banner_sprite = spr_banner_chrome;
 turn_sprite = spr_turn_chrome;
 party_sprite = chrome_party;

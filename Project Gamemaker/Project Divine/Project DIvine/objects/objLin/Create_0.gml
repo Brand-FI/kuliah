@@ -9,6 +9,7 @@ skills = ["Skill", "Ultimate"];
 level = 1;
 team = "character";
 
+voice = Kerstyn_sure;
 banner_sprite = spr_banner_lin;
 turn_sprite = spr_turn_lin;
 party_sprite = lin_party;

@@ -11,6 +11,11 @@ function PlaySound()
 		audio_stop_all()
 		audio_play_sound(chill, 1, true);
 	}
+	else if(nama == "PartySelector")
+	{
+		audio_stop_all()
+		audio_play_sound(travel, 1, true);
+	}
 	else if(nama == "kilusplain")
 	{
 		if(combatState == false && countStep % 10 >= 0 && countStep % 10 < 5)
