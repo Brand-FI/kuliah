@@ -52,7 +52,7 @@ function NormalAttack()
 						objBattleText,
 						{font: FontDamage, col: dmgColor, text: string(damage)}
 					);
-				
+				audio_play_sound(magic_spell, 1, false);
 			}
 		}
 }
@@ -88,7 +88,7 @@ function BasicSkill()
 						objBattleText,
 						{font: FontDamage, col: dmgColor, text: string(damage)}
 					);
-					
+					audio_play_sound(magical_cast, 1, false);
 			}
 		}
 		return true;
@@ -131,7 +131,7 @@ function SpecialSkill()
 							objBattleText,
 							{font: FontDamage, col: dmgColor, text: string(damage)}
 						);
-						
+						audio_play_sound(magical_cast, 1, false);
 				}
 			}
 			return true;

@@ -37,6 +37,7 @@ function NormalAttack()
 			objBattleText,
 			{font: FontDamage, col: dmgColor, text: string(damage)}
 		);
+		audio_play_sound(tear, 1, false);
     }	
 }
 function SpecialAttack()
@@ -64,5 +65,6 @@ function SpecialAttack()
 			objBattleText,
 			{font: FontDamage, col: dmgColor, text: string(damage)}
 		);
+		audio_play_sound(bite, 1, false);
     }	
 }

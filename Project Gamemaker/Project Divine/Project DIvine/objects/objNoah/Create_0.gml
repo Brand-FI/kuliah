@@ -51,7 +51,7 @@ function NormalAttack()
 						objBattleSprite,
 						{font: FontDamage, sprite: spriteChar }
 					);
-					audio_play_sound(slash, 1, false);
+					audio_play_sound(slash1, 1, false);
 				
 			}
 		}
@@ -88,7 +88,7 @@ function BasicSkill()
 						objBattleText,
 						{font: FontDamage, col: dmgColor, text: string(damage)}
 					);
-					audio_play_sound(slash, 1, false);
+					audio_play_sound(double_slash, 1, false);
 			}
 		}
 		return true;

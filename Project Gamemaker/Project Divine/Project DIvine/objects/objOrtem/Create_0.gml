@@ -33,7 +33,7 @@ function NormalAttack()
 				var musuh = global.participants[i]
 				musuh.hp -= damage;
 				musuh.damageDiterima = damage;
-						var spriteChar = spr_ortem_special;
+						var spriteChar = spr_ortem_normal;
 						instance_create_depth
 							(
 								musuh.x,
@@ -51,6 +51,7 @@ function NormalAttack()
 						objBattleText,
 						{font: FontDamage, col: dmgColor, text: string(damage)}
 					);
+				audio_play_sound(slash, 1, false);
 			}
 		}
 }
@@ -87,7 +88,7 @@ function BasicSkill()
 						objBattleText,
 						{font: FontDamage, col: dmgColor, text: string(damage)}
 					);
-					
+					audio_play_sound(hammer, 1, false);
 			}
 		}
 		return true;
@@ -131,7 +132,7 @@ function SpecialSkill()
 							objBattleText,
 							{font: FontDamage, col: dmgColor, text: string(damage)}
 						);
-						audio_play_sound(slash, 1, false);
+						audio_play_sound(big_slash, 1, false);
 				}
 			}
 			return true;

@@ -30,7 +30,6 @@ function NormalAttack()
 		{
 		    if (global.participants[i].team == "enemy") 
 			{
-				audio_play_sound(punch_2, 1, false);
 				damage = attack * 30
 				var musuh = global.participants[i]
 				musuh.hp -= damage;
@@ -44,6 +43,7 @@ function NormalAttack()
 						objBattleText,
 						{font: FontDamage, col: dmgColor, text: string(damage)}
 					);
+				audio_play_sound(punch_2, 1, false);
 			}
 		}
 }
@@ -64,7 +64,8 @@ function BasicSkill()
 	                - 100,
 	                objBattleText,
 	                {font: FontDamage, col: c_lime, text: "+" + string(heal)} 
-	            );	
+	            );
+				audio_play_sound(magical_chime, 1, false);
 			}
 			else
 			{
