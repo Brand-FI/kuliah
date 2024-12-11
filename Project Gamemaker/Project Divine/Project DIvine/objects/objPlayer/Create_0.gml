@@ -1,3 +1,4 @@
+
 remnant = 54000;
 max_pity = 90;                 
 pity_counter = 0;
@@ -6,8 +7,20 @@ global.selectedParty = [];
 
 character = ds_list_create()
 ds_list_add(character, objNoah);
-ds_list_add(character, objChrome);
-ds_list_add(character, objLin);
-ds_list_add(character, objAlba);
-ds_list_add(character, objOrtem);
-ds_list_add(character, objFarouk);
+
+
+globalvar countWolf;
+globalvar countGhoul;
+globalvar countWSnake;
+globalvar countBSnake;
+
+countWolf = 0;
+countGhoul = 0;
+countWSnake = 0;
+countBSnake = 0;
+
+load_game();
+
+
+
+

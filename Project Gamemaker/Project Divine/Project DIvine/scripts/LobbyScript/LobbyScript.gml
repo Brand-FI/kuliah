@@ -4,15 +4,7 @@ PlaySound();
 globalvar gamePause;
 gamePause = false;
 
-globalvar countWolf;
-globalvar countGhoul;
-globalvar countWSnake;
-globalvar countBSnake;
 
-countWolf = 0;
-countGhoul = 0;
-countWSnake = 0;
-countBSnake = 0;
 
 
 

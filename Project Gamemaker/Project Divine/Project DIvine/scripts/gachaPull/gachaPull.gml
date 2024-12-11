@@ -7,6 +7,7 @@ function gachaPull(numberPull)
         results[i] = gacha_pull();
     }
     return results;
+	save_game();
 }
 
 function gacha_pull()
