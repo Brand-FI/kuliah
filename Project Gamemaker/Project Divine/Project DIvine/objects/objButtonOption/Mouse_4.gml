@@ -8,3 +8,4 @@ if instance_exists(objGachaUI)
 {
 	instance_destroy(objGachaUI);
 }
+
