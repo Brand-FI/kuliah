@@ -4,3 +4,7 @@ PlaySound();
 combatState = false;
 countStep = 0;
 audio_stop_all();
+if instance_exists(objGachaUI)
+{
+	instance_destroy(objGachaUI);
+}

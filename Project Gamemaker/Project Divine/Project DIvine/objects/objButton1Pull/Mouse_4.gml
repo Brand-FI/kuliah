@@ -5,8 +5,7 @@ if(clicked == false)
 		objPlayer.remnant -= 160;
 		objGachaBanner.visible = false;
 		objButton1Pull.state = true;
-		instance_create_depth(960, 540, -1, objGachaLogic);
+		instance_create_depth(960, 540, 1, objGachaLogic);
 		clicked = true;
-		alarm[0] = room_speed * 3;
 	}	
 }
