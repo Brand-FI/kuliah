@@ -86,7 +86,7 @@ function BasicSkill()
         return true;
     }
     else
-    {;
+    {
 		ManaSkillNeed(mana, 20);
         return false;  
     }

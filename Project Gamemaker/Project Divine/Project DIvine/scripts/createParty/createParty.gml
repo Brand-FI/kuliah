@@ -1,4 +1,7 @@
 function createParty() {
+ 
+
+    // Inisialisasi array party
     global.party = [];
 	
     var character_list = global.selectedParty; 

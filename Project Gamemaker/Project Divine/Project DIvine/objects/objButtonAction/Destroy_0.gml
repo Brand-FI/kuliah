@@ -1,0 +1,1 @@
+global.action_in_progress = false;

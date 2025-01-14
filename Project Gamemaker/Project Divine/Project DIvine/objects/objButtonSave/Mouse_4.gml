@@ -1,9 +1,6 @@
 audio_play_sound(button_2, 1, false);
 
 var character_list = objPlayer.character;
-audio_play_sound(button_2, 1, false);
-
-var character_list = objPlayer.character;
 
 for (var i = 0; i < ds_list_size(character_list); i++) 
 {

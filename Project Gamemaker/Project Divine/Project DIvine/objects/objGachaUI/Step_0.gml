@@ -33,7 +33,6 @@ if (fade_in) {
     }
 }
 
-// Cooldown pencet W berkurang setiap step / frame
 if (keyCooldown > 0) {
         keyCooldown--;
 }
