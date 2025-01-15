@@ -1,4 +1,4 @@
-global.action_in_progress = false; 
+ global.action_in_progress = false; 
 
 function doAction() 
 {

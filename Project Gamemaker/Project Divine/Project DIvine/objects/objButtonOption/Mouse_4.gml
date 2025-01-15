@@ -8,4 +8,4 @@ if instance_exists(objGachaUI)
 {
 	instance_destroy(objGachaUI);
 }
-
+global.action_in_progress = false;
